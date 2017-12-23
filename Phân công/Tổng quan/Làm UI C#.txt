@@ -1,0 +1,108 @@
+﻿Công việc 1:
+Mô tả:
+Tạo thêm 1 form trong project tên "DanhMucPhongFormView" với giao diện như sau:
+|------------------------------------------------------------------|
+|                         Danh mục phòng                           |
+|------------------------------------------------------------------|
+|Tìm kiếm:                                                         |
+|       Theo mã phòng:<textTimMaphong>                             |
+|       Theo loại phòng: <comboTimLoaiPhong>                       |
+|                                                <buttonTimKiem>   |
+|------------------------------------------------------------------|
+|                                                                  |
+|                                                                  |
+|                                                                  |
+|                  <datagridviewDanhMucPhong>                      |
+|                                                                  |
+|                                                                  |
+|                                                                  |
+|                                                                  |
+|------------------------------------------------------------------|
+
+Công việc 2:
+Mô tả:
+Tạo thêm 1 form trong project tên "PhieuThueFormView" với giao diện như sau:
+|------------------------------------------------------------------|
+|                      Danh mục phiếu thuê                         |
+|------------------------------------------------------------------|
+|Tìm kiếm:                                                         |
+|    Theo mã phiếu thuê:<textTimMaPhieuThue>                       |
+|    Theo ngày bắt đầu: <datetimeTimNgayDB > - <datetimeTimeNgayKT>|
+|                               <buttonTaoMoi>   <buttonTimKiem>   |
+|------------------------------------------------------------------|
+|   Mã phiếu thuê: <textboxMaPhieuThue>  Loại phòng:<textLoaiPhong>|
+|   Mã phòng: <comboboxMaPhong>          Đơn giá: <textDonGia>     |
+|   Ngày bắt đầu:<datetimeNgayBD>                                  |
+|                                                                  |
+|------------------------------------------------------------------|
+|                                                                  |
+|                                                                  |
+|                  <datagridviewCTPhieuThue>                       |
+|                                                                  |
+|------------------------------------------------------------------|
+|                                                                  |
+|                                                                  |
+|                  <datagridviewPhieuThue>                         |
+|                                                                  |
+|                                                                  |
+|                                                                  |
+|                                                                  |
+|------------------------------------------------------------------|
+
+Công việc 3:
+Mô tả:
+Tạo thêm 1 form trong project tên "TaoPhieuThueFormView" với giao diện như sau:
+|------------------------------------------------------------------|
+|                         Tạo Phiếu Thuê                           |
+|------------------------------------------------------------------|
+|   Mã phòng: <comboboxMaPhong>    Tình trạng phòng:<textTinhTrang>|
+|                                                                  |
+|------------------------------------------------------------------|
+|   Khách hàng:                                                    |
+|     |----------------------------------|                         |
+|     |                                  |                         |
+|     | <listKhachHang>                  |                         |
+|     |----------------------------------|                         |
+|                                                                  |
+|   <buttonXoaKhachHang>        <buttonThemKhachHang>              |
+|                                                                  |
+|                                                                  |
+|                                        <buttonTao> <buttonHuyTao>|
+|------------------------------------------------------------------|
+
+Công việc 4:
+Mô tả:
+Tạo thêm 1 form trong project tên "KhachHangFormView" với giao diện như sau:
+|------------------------------------------------------------------|
+|                         Khách Hàng                               |
+|------------------------------------------------------------------|
+|Tìm kiếm:                                                         |
+|       Theo mã khách hàng:<textTimMaKH>                           |
+|       Theo loại khách hàng: <comboTimLoaiKH>                     |
+|                                                <buttonTimKiem>   |
+|------------------------------------------------------------------|
+|                                                                  |
+|                                                                  |
+|                                                                  |
+|                  <datagridviewKhachHang>                         |
+|                                                                  |
+|                                                                  |
+|                                                                  |
+|                                                                  |
+|------------------------------------------------------------------|
+|                                                                  |
+|      Họ tên: <textHoTen>                                         |
+|      Loại khách hàng:<comboLoaiKH>                               |
+|      CMND: <textCMND>                                            |
+|      Địa Chỉ:<textDiaChi>                                        |
+|                                                                  |
+|                                                                  |
+|                                      <buttonThemKH>              |
+|------------------------------------------------------------------|
+
+Công việc 4: (UI báo cáo mật độ)
+Công việc 5: (UI báo cáo doanh thu loại)
+Công việc 6: (UI menu chính)
+
+
+

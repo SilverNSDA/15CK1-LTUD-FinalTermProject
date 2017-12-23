@@ -1,0 +1,95 @@
+﻿Công việc 1: 
+Mô tả:
+Viết câu lệnh truy vấn sql cho các bảng sau:
+-Tạo database tên QLKhachSan
+-Danh mục phòng: 
+	Phong(
+		ID nchar(10) primary key,
+		LoaiPhong nchar(10) not null,
+		GhiChu nvarchar(50),
+		)
+-Loại phòng:
+	LoaiPhong(
+		ID nchar(10) primary key,
+		DonGia int,
+		)
+-Khóa ngoại Phong(LoaiPhong)-->LoaiPhong(ID)
+
+Bài làm lưu lại với tên "builder000.sql"
+Lưu trong folder /database/query
+
+Công việc 2:
+Mô tả:
+Viết câu lệnh truy vấn sql cho các bảng sau:
+-Phiếu thuê phòng: 
+	PhieuThue(
+		ID nchar(10) primary key,
+		MaPhong nchar(10) not null,
+		NgayBatDau datetime not null,
+		)
+-Khóa ngoại PhieuThue(MaPhong)-->Phong(ID)
+-Khách hàng:
+	KhachHang(
+		ID nchar(10) primary key,
+		HoTen tinytext,
+		LoaiKhachHang nchar(10),
+		CMND nchar(20),
+		DiaChi tinytext,
+		)
+-Loại khách hàng:
+	LoaiKhachHang(
+		ID nchar(10) primary key,
+		TenLoai tinytext,
+		)
+-Chi tiết phiếu thuê: 
+	CT_PhieuThue(
+		ID nchar(10) primary key,
+		MaPhieuThue nchar(10) not null,
+		MaKhachHang nchar(10) not null,
+		)
+-Khóa ngoại KhachHang(LoaiKhachHang)-->LoaiKhachHang(ID)
+-Khóa ngoại CT_PhieuThue(MaPhieuThue)-->PhieuThue(ID)
+-Khóa ngoại CT_PhieuTHue(MaKhachHang)-->KhachHang(ID)
+
+Bài làm lưu dưới tên "builder001.sql"
+Lưu trong folder /database/query
+
+Công việc 3:
+Mô tả:
+Viết câu lệnh truy vấn sql cho các bảng sau:
+-Hóa đơn:
+	HoaDon(
+		MaPhieuThue nchar(10) primary key,
+		MaKhachHang nchar(10),
+		NgayThanhToan datetime,
+		GiaTri int,
+		)
+-Quy Định:
+	QuyDinh(
+		ID nchar(10) primary key,
+		MoTa text,
+		GiaTri float(10,2),
+		)
+-Báo cáo mật độ sử dụng phòng:
+	MDSuDungPhong(
+		ID nchar(10) primary key,
+		MaPhong nchar(10) not null,
+		NgayBatDau datetime,
+		NgayKetThuc datetime,
+		MatDo int,
+		)
+-Báo cáo doanh thu theo loại phòng:
+	DTTheoLoaiPhong(
+		ID nchar(10) primary key,
+		MaLoaiPhong nchar(10) not null,
+		NgayBatDau datetime,
+		NgayKetThuc datetime,
+		DoanhTHu int,
+		)
+-Khóa ngoại HoaDon(MaPhieuThue)-->PhieuThue(MaPhieuThue)
+-Khóa ngoại HoaDon(MaKhachHang)-->KhachHang(ID)
+-Khóa ngoại MDSuDUngPhong(MaPhong)-->Phong(ID)
+-Khóa ngoại DTTheoLoaiPhong(MaLoaiPhong)-->LoaiPhong(ID)
+
+Bài làm lưu dưới tên "builder001.sql"
+Lưu trong folder /database/query

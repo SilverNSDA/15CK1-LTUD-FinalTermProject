@@ -16,3 +16,7 @@ Cách làm bài: <br>
 -Làm bài<br>
 -vào Git Desktop nhập summary và description và nhấn nút commit<br>
 -nhấn push to origin<br>
+
+
+Xem tổng quan công việc cần làm trong folder "Phân Công/Tổng quan"<br>
+Xem công việc đã hoàn thành trong folder "Phân công/Công việc đã hoàn thành"<br>
