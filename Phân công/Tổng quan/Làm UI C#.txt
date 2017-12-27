@@ -100,7 +100,7 @@ Tạo thêm 1 form trong project tên "KhachHangFormView" với giao diện như
 |                                      <buttonThemKH>              |
 |------------------------------------------------------------------|
 
-Công việc 4: (UI báo cáo)
+Công việc 5: (UI báo cáo)
 Mô tả:
 Tạo 1 form trong project có tên "BaoCaoFormView" với giao diện như sau:
 |------------------------------------------------------------------|
@@ -121,7 +121,7 @@ Tạo 1 form trong project có tên "BaoCaoFormView" với giao diện như sau:
 |                                                                  |
 |------------------------------------------------------------------|
 
-Công việc 5: (UI menu chính)
+Công việc 6: (UI menu chính)
 đổi tên form 1 thành MenuFormView và thiết kế theo giao diện sau
 |------------------------------------------------------------------|
 |                              Menu                                |
