@@ -122,7 +122,7 @@ Tạo 1 form trong project có tên "BaoCaoFormView" với giao diện như sau:
 |------------------------------------------------------------------|
 
 Công việc 5: (UI menu chính)
-
+đổi tên form 1 thành MenuFormView và thiết kế theo giao diện sau
 |------------------------------------------------------------------|
 |                              Menu                                |
 |                                                                  |
