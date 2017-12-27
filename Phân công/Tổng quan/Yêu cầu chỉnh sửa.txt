@@ -1,0 +1,42 @@
+﻿Yêu cầu 1: PhieuThueFormView:
+lý do: giao diện của màn hình này khá phức tạp nên
+yêu cầu:
+	kéo dài lại 2 các khung datetimepicker để thấy hết ngày tháng
+	cái datetimepicker trong propertise có mục custom format chỉnh lại thành "HH:mm:ss dd-MM-yyyy" 
+	màn hình chính đã được chia thành 4 phần bằng split container yêu cầu chỉnh lại như sau:
+	<splitContainer>
+		<panel-1>
+			<groupbox name="Tìm kiếm">
+				Theo mã phiếu thuê:
+				Theo này bắt đầu: 
+			</groupbox>
+			<groupbox name="Chi tiết phiếu thuê">
+				<splitContainer>
+					<panel-1>
+						Mã phiếu thuê
+						.....
+					</panel-1>
+					<panel-2>
+						dgvCTPhieuThue
+					</panel-2>
+				</splitContainer>
+			</groupbox>
+		</panel-1>
+		<panel-2>
+			dgvPhieuThue
+		</panel-2>
+	</slitContainer>
+
+Yêu cầu 2: TaoPhieuThueFormView disable textbox tình trạng phòng
+	Thêm kế bên nút xóa và thêm khách hàng nút tạo khách hàng
+	tạo form TaoKhachHangFormView với giao diện như sau:
+|------------------------------------------------------------------|
+|                                                                  |
+|      Họ tên: <textHoTen>                                         |
+|      Loại khách hàng:<comboLoaiKH>                               |
+|      CMND: <textCMND>                                            |
+|      Địa Chỉ:<textDiaChi>                                        |
+|                                                                  |
+|                                                                  |
+|                                      <buttonThemKH>              |
+|------------------------------------------------------------------|
