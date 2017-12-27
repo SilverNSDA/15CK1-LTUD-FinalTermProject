@@ -1,0 +1,4 @@
+﻿Yêu cầu 1: viết query tạo dữ liệu mẫu cho database
+Yêu cầu 2: viết store function để thêm 1 dòng dữ liệu đối với mỗi bảng với tên function là add_row_<tên table>
+Yêu cầu 3: viết store function để xóa 1 dòng dữ liệu đối với mỗi bảng với tên function là delete_row_<tên table>
+Yêu cầu 4: viết store function để sửa 1 dòng dữ liệu đối với mỗi bảng với tên function là update_row_<tên table>
