@@ -5,22 +5,18 @@ Create table PHIEUTHUE(
 	Primary key (ID)
 );
 
-Alter table PHIEUTHUE
-add constraint PK_PHIEUTHUE_PHONG
-foreign key(MaPhong) references PHONG(ID)
-
 Create table KHACHHANG(
 	ID nchar(10),
 	HoTen nvarchar(255),
 	LoaiKhachHang nchar(10),
 	CMND nchar(20),
-	DiaChi nvarchar(255),
+	DiaChi nvarchar(4000),
 	Primary key (ID)
 );
 
 Create table LOAIKHACHHANG(
 	ID nchar(10),
-	TenLoai nvarchar(255),
+	TenLoai nvarchar(4000),
 	Primary key (ID)
 );
 
@@ -31,14 +27,12 @@ Create table CT_PHIEUTHUE(
 	Primary key (ID)
 );
 
-Alter table KHACHHANG
-add constraint PK_KHACHHANG_LOAIKHACHHANG
-foreign key(LoaiKhachHang) references LOAIKHACHHANG(ID)
+ALTER TABLE PHIEUTHUE ADD CONSTRAINT FK_PHIEUTHUE
+FOREIGN KEY (MaPhong) REFERENCES PHONG (ID)
 
-Alter table CT_PHIEUTHUE
-add constraint PK_CT_PHIEUTHUE_PHIEUTHUE
-foreign key(MaPhieuThue) references LOAIKHACHHANG(ID)
+ALTER TABLE KHACHHANG ADD CONSTRAINT FK_KHACHHANG
+FOREIGN KEY (LoaiKhachHang) REFERENCES LOAIKHACHHANG (ID)
 
-Alter table CT_PHIEUTHUE
-add constraint PK_CT_PHIEUTHUE_KHACHHANG
-foreign key(MaKhachHang) references KHACHHANG(ID)
+ALTER TABLE CT_PHIEUTHUE ADD CONSTRAINT FK_CT_PHIEUTHUE
+FOREIGN KEY (MaPhieuThue) REFERENCES PHIEUTHUE (ID),
+FOREIGN KEY (MaKhachHang) REFERENCES KHACHHANG (ID)

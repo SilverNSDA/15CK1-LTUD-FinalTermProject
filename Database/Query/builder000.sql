@@ -14,6 +14,6 @@ Create table LOAIPHONG(
 	Primary key (ID)
 );
 
-Alter table PHONG
-add constraint PK_PHONG_LOAIPHONG
-foreign key(LoaiPhong) references LOAIPHONG(ID)
+ALTER TABLE PHONG ADD CONSTRAINT FK_PHONG
+FOREIGN KEY (LoaiPhong) REFERENCES LOAIPHONG (ID)
+

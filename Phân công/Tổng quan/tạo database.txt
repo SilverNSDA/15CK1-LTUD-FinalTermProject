@@ -91,5 +91,5 @@ Viết câu lệnh truy vấn sql cho các bảng sau:
 -Khóa ngoại MDSuDUngPhong(MaPhong)-->Phong(ID)
 -Khóa ngoại DTTheoLoaiPhong(MaLoaiPhong)-->LoaiPhong(ID)
 
-Bài làm lưu dưới tên "builder001.sql"
+Bài làm lưu dưới tên "builder002.sql"
 Lưu trong folder /database/query
