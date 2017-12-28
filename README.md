@@ -23,9 +23,9 @@ Xem công việc đã hoàn thành trong folder "Phân công/Công việc đã h
 
 
 Tóm tắt công việc: <br>
-Làm UI : 80%<br>
-Tạo database: 0%<br>
-Store function database: 0%<br>
-Thiết kế các datagridview:0%<br>
-Code thực thi: 0%<br>
-Thiệt kế code thực thi: 0%<br>
+Làm UI : 3/6<br>
+Tạo database: 0/3<br>
+Store function database: 0/3<br>
+Thiết kế các datagridview:0/7<br>
+Code thực thi: 0/0<br>
+Thiệt kế code thực thi: 0/7<br>
