@@ -86,7 +86,7 @@ Viết câu lệnh truy vấn sql cho các bảng sau:
 		NgayKetThuc datetime,
 		DoanhTHu int,
 		)
--Khóa ngoại HoaDon(MaPhieuThue)-->PhieuThue(MaPhieuThue)
+-Khóa ngoại HoaDon(MaPhieuThue)-->PhieuThue(ID)
 -Khóa ngoại HoaDon(MaKhachHang)-->KhachHang(ID)
 -Khóa ngoại MDSuDUngPhong(MaPhong)-->Phong(ID)
 -Khóa ngoại DTTheoLoaiPhong(MaLoaiPhong)-->LoaiPhong(ID)
