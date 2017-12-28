@@ -1,4 +1,7 @@
 ﻿* Làm UI:
 - Công việc 1: hoàn thành
 - Công việc 2: hoàn thành
-- CÔng việc 3: hoàn thành
+- Công việc 3: hoàn thành
+* Phần tạo database
+- Công việc 1: hoàn thành
+- Công việc 2: hoàn thành
