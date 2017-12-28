@@ -100,9 +100,39 @@ Tạo thêm 1 form trong project tên "KhachHangFormView" với giao diện như
 |                                      <buttonThemKH>              |
 |------------------------------------------------------------------|
 
-Công việc 4: (UI báo cáo mật độ)
-Công việc 5: (UI báo cáo doanh thu loại)
+Công việc 5: (UI báo cáo)
+Mô tả:
+Tạo 1 form trong project có tên "BaoCaoFormView" với giao diện như sau:
+|------------------------------------------------------------------|
+|                            Báo cáo                               |
+|------------------------------------------------------------------|
+|       <radioMatDoPhong>            <radioDoanhThuLoai>           |
+|       Từ ngày: <datetimeNgayBatDau>                              |
+|       Đến ngày: <datetimeNgayKetThuc>                            |
+|                                                <buttonBaoCao>    |
+|------------------------------------------------------------------|
+|                                                                  |
+|                                                                  |
+|                                                                  |
+|                  <datagridviewBaoCao>                            |
+|                                                                  |
+|                                                                  |
+|                                                                  |
+|                                                                  |
+|------------------------------------------------------------------|
+
 Công việc 6: (UI menu chính)
-
-
-
+đổi tên form 1 thành MenuFormView và thiết kế theo giao diện sau
+|------------------------------------------------------------------|
+|                              Menu                                |
+|                                                                  |
+|      <icon>                 <icon>              <icon>           |
+|    Danh mục phòng      Phiếu thuê phòng        Khách hàng        |
+|                                                                  |
+|      <icon>                                                      |
+|      Báo cáo                                                     |
+|                                                                  |
+|                                                                  |
+|                                                                  |
+|                                                                  |
+|------------------------------------------------------------------|
