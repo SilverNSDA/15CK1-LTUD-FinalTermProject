@@ -2,10 +2,10 @@
 
 #Thành viên nhóm
 
-1560008-Nguyễn Sanh Đình Anh<br>
-1560059-Đinh Thị Chang<br>
-1560121-Vũ Phương Hoài Đan<br>
-1560036-Nguyễn Gia Bảo<br>
+	1560008	Nguyễn Sanh Đình Anh	@SilverNSDA<br>
+	1560059	Đinh Thị Chang	@DINHTHICHANG<br>
+	1560121	Vũ Phương Hoài Đan	@VUPHUONGHOAIDAN<br>
+	1560036	Nguyễn Gia Bảo	@1560036NGUYENGIABAO<br>
 
 
 
@@ -20,3 +20,12 @@ Cách làm bài: <br>
 
 Xem tổng quan công việc cần làm trong folder "Phân Công/Tổng quan"<br>
 Xem công việc đã hoàn thành trong folder "Phân công/Công việc đã hoàn thành"<br>
+
+
+Tóm tắt công việc: <br>
+Làm UI : 80%<br>
+Tạo database: 0%<br>
+Store function database: 0%<br>
+Thiết kế các datagridview:0%<br>
+Code thực thi: 0%<br>
+Thiệt kế code thực thi: 0%<br>
