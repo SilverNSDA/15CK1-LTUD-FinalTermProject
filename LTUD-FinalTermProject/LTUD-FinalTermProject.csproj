@@ -57,6 +57,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="KhachHangFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHangFormView.Designer.cs">
+      <DependentUpon>KhachHangFormView.cs</DependentUpon>
+    </Compile>
     <Compile Include="PhieuThueFormView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHangFormView.resx">
+      <DependentUpon>KhachHangFormView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PhieuThueFormView.resx">
       <DependentUpon>PhieuThueFormView.cs</DependentUpon>
