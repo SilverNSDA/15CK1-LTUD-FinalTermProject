@@ -71,6 +71,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaoKhachHangFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaoKhachHangFormView.Designer.cs">
+      <DependentUpon>TaoKhachHangFormView.cs</DependentUpon>
+    </Compile>
     <Compile Include="TaoPhieuThueFormView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TaoKhachHangFormView.resx">
+      <DependentUpon>TaoKhachHangFormView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TaoPhieuThueFormView.resx">
       <DependentUpon>TaoPhieuThueFormView.cs</DependentUpon>
     </EmbeddedResource>
