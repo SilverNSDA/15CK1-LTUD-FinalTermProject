@@ -1,1 +1,12 @@
 D:\Krungy Soi\FIT\N3\LT Web\GitHub\15CK1-LTUD-FinalTermProject\LTUD-FinalTermProject\bin\Debug\LTUD-FinalTermProject.exe.config
+D:\Krungy Soi\FIT\N3\LT Web\GitHub\15CK1-LTUD-FinalTermProject\LTUD-FinalTermProject\bin\Debug\LTUD-FinalTermProject.exe
+D:\Krungy Soi\FIT\N3\LT Web\GitHub\15CK1-LTUD-FinalTermProject\LTUD-FinalTermProject\bin\Debug\LTUD-FinalTermProject.pdb
+D:\Krungy Soi\FIT\N3\LT Web\GitHub\15CK1-LTUD-FinalTermProject\LTUD-FinalTermProject\obj\Debug\LTUD_FinalTermProject.DanhMucPhongFormView.resources
+D:\Krungy Soi\FIT\N3\LT Web\GitHub\15CK1-LTUD-FinalTermProject\LTUD-FinalTermProject\obj\Debug\LTUD_FinalTermProject.Form1.resources
+D:\Krungy Soi\FIT\N3\LT Web\GitHub\15CK1-LTUD-FinalTermProject\LTUD-FinalTermProject\obj\Debug\LTUD_FinalTermProject.PhieuThueFormView.resources
+D:\Krungy Soi\FIT\N3\LT Web\GitHub\15CK1-LTUD-FinalTermProject\LTUD-FinalTermProject\obj\Debug\LTUD_FinalTermProject.Properties.Resources.resources
+D:\Krungy Soi\FIT\N3\LT Web\GitHub\15CK1-LTUD-FinalTermProject\LTUD-FinalTermProject\obj\Debug\LTUD_FinalTermProject.TaoPhieuThueFormView.resources
+D:\Krungy Soi\FIT\N3\LT Web\GitHub\15CK1-LTUD-FinalTermProject\LTUD-FinalTermProject\obj\Debug\LTUD-FinalTermProject.csproj.GenerateResource.Cache
+D:\Krungy Soi\FIT\N3\LT Web\GitHub\15CK1-LTUD-FinalTermProject\LTUD-FinalTermProject\obj\Debug\LTUD-FinalTermProject.csproj.CoreCompileInputs.cache
+D:\Krungy Soi\FIT\N3\LT Web\GitHub\15CK1-LTUD-FinalTermProject\LTUD-FinalTermProject\obj\Debug\LTUD-FinalTermProject.exe
+D:\Krungy Soi\FIT\N3\LT Web\GitHub\15CK1-LTUD-FinalTermProject\LTUD-FinalTermProject\obj\Debug\LTUD-FinalTermProject.pdb
