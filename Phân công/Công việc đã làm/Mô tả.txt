@@ -3,6 +3,7 @@
 - Công việc 2: hoàn thành
 - Công việc 3: hoàn thành
 - Công việc 4: hoàn thành
+- Công việc 6: hoàn thành 40%
 * Phần tạo database
 - Công việc 1: hoàn thành
 - Công việc 2: hoàn thành
