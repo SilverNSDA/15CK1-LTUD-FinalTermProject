@@ -1,6 +1,6 @@
 ﻿namespace LTUD_FinalTermProject
 {
-    partial class Form1
+    partial class MenuFormView
     {
         /// <summary>
         /// Required designer variable.
