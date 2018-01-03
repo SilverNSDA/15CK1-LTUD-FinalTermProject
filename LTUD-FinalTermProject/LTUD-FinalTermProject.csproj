@@ -57,11 +57,11 @@
     <Compile Include="DanhMucPhongFormView.Designer.cs">
       <DependentUpon>DanhMucPhongFormView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="MenuFormView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MenuFormView.Designer.cs">
+      <DependentUpon>MenuFormView.cs</DependentUpon>
     </Compile>
     <Compile Include="KhachHangFormView.cs">
       <SubType>Form</SubType>
@@ -95,8 +95,8 @@
     <EmbeddedResource Include="DanhMucPhongFormView.resx">
       <DependentUpon>DanhMucPhongFormView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MenuFormView.resx">
+      <DependentUpon>MenuFormView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhachHangFormView.resx">
       <DependentUpon>KhachHangFormView.cs</DependentUpon>

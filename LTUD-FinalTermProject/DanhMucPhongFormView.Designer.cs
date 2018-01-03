@@ -30,20 +30,26 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dgvDanhMucPhong = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.cbTimLoaiPhong = new System.Windows.Forms.ComboBox();
             this.txtTimMaPhong = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.dgvDanhMucPhong = new System.Windows.Forms.DataGridView();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaLoaiPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenLoaiPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucPhong)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucPhong)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -74,15 +80,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DANH MỤC PHÒNG";
-            // 
-            // dgvDanhMucPhong
-            // 
-            this.dgvDanhMucPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDanhMucPhong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvDanhMucPhong.Location = new System.Drawing.Point(0, 0);
-            this.dgvDanhMucPhong.Name = "dgvDanhMucPhong";
-            this.dgvDanhMucPhong.Size = new System.Drawing.Size(424, 203);
-            this.dgvDanhMucPhong.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -140,6 +137,52 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Theo mã phòng:";
             // 
+            // dgvDanhMucPhong
+            // 
+            this.dgvDanhMucPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDanhMucPhong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.STT,
+            this.MaPhong,
+            this.MaLoaiPhong,
+            this.TenPhong,
+            this.TenLoaiPhong,
+            this.DonGia});
+            this.dgvDanhMucPhong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDanhMucPhong.Location = new System.Drawing.Point(0, 0);
+            this.dgvDanhMucPhong.Name = "dgvDanhMucPhong";
+            this.dgvDanhMucPhong.Size = new System.Drawing.Size(424, 203);
+            this.dgvDanhMucPhong.TabIndex = 0;
+            // 
+            // STT
+            // 
+            this.STT.HeaderText = "STT";
+            this.STT.Name = "STT";
+            // 
+            // MaPhong
+            // 
+            this.MaPhong.HeaderText = "Mã phòng";
+            this.MaPhong.Name = "MaPhong";
+            // 
+            // MaLoaiPhong
+            // 
+            this.MaLoaiPhong.HeaderText = "Mã loại phòng";
+            this.MaLoaiPhong.Name = "MaLoaiPhong";
+            // 
+            // TenPhong
+            // 
+            this.TenPhong.HeaderText = "Tên phòng";
+            this.TenPhong.Name = "TenPhong";
+            // 
+            // TenLoaiPhong
+            // 
+            this.TenLoaiPhong.HeaderText = "Tên loại phòng";
+            this.TenLoaiPhong.Name = "TenLoaiPhong";
+            // 
+            // DonGia
+            // 
+            this.DonGia.HeaderText = "Đơn giá";
+            this.DonGia.Name = "DonGia";
+            // 
             // DanhMucPhongFormView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -153,9 +196,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucPhong)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucPhong)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -171,5 +214,11 @@
         private System.Windows.Forms.TextBox txtTimMaPhong;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaLoaiPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenLoaiPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
     }
 }
