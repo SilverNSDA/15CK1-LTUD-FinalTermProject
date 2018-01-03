@@ -15,3 +15,9 @@
 - Yêu cầu 3: hoàn thành
 * Yêu cầu thiết kê
 - Yêu cầu 1: hoàn thành 70%
+*Query dữ liệu mẫu cho database
+-table PHONG: hoàn thành
+-table LOAIPHONG: hoàn thành
+-table KHACHHANG: hoàn thành
+-table LOAIKHACHHANG: hoàn thành
+-table QUYDINH: hoàn thành
