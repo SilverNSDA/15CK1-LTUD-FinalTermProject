@@ -37,6 +37,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnThemKH = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -106,18 +107,28 @@
             // 
             // btnThemKH
             // 
-            this.btnThemKH.Location = new System.Drawing.Point(189, 160);
+            this.btnThemKH.Location = new System.Drawing.Point(110, 167);
             this.btnThemKH.Name = "btnThemKH";
             this.btnThemKH.Size = new System.Drawing.Size(112, 23);
             this.btnThemKH.TabIndex = 8;
             this.btnThemKH.Text = "Thêm khách hàng";
             this.btnThemKH.UseVisualStyleBackColor = true;
             // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(228, 167);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(83, 23);
+            this.btnCancel.TabIndex = 9;
+            this.btnCancel.Text = "Hủy";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            // 
             // TaoKhachHangFormView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(323, 202);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnThemKH);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
@@ -145,5 +156,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnThemKH;
+        private System.Windows.Forms.Button btnCancel;
     }
 }

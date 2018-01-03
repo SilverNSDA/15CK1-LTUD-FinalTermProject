@@ -2,10 +2,10 @@
 
 #Thành viên nhóm
 
-	1560008	Nguyễn Sanh Đình Anh	@SilverNSDA<br>
-	1560059	Đinh Thị Chang	@DINHTHICHANG<br>
-	1560121	Vũ Phương Hoài Đan	@VUPHUONGHOAIDAN<br>
-	1560036	Nguyễn Gia Bảo	@1560036NGUYENGIABAO<br>
+	1560008	Nguyễn Sanh Đình Anh		@SilverNSDA
+	1560059	Đinh Thị Chang				@DINHTHICHANG
+	1560121	Vũ Phương Hoài Đan			@VUPHUONGHOAIDAN
+	1560036	Nguyễn Gia Bảo				@1560036NGUYENGIABAO
 
 
 
@@ -28,4 +28,13 @@ Tạo database: 3/3<br>
 Store function database: 0/3<br>
 Thiết kế các datagridview:0/7<br>
 Code thực thi: 0/0<br>
-Thiệt kế code thực thi: 0/7<br>
+Thiết kế code thực thi: 0/7<br>
+Yêu cầu kết nối database: 0/3<br>
+
+
+	TODO và lưu ý:
+		
+		Các công việc cần làm hiện nay: 
+			Hoàn thành 'Làm UI'
+			Yêu cầu thiết kế các datagridview
+			Hoàn thành 'Yêu cầu kết nối database'

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.dgvPhieuThue = new System.Windows.Forms.DataGridView();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,22 +41,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
-            this.dgvCTPhieuThue = new System.Windows.Forms.DataGridView();
-            this.txtMaPhieuThue = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cbMaPhong = new System.Windows.Forms.ComboBox();
-            this.dtNgayBD = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtLoaiPhong = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.txtDonGia = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.txtLoaiPhong = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dtNgayBD = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cbMaPhong = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtMaPhieuThue = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dgvCTPhieuThue = new System.Windows.Forms.DataGridView();
+            this.dgvPhieuThue = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPhieuThue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -69,6 +68,7 @@
             this.splitContainer3.Panel2.SuspendLayout();
             this.splitContainer3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTPhieuThue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPhieuThue)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -85,18 +85,9 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dgvPhieuThue);
-            this.splitContainer1.Size = new System.Drawing.Size(527, 565);
-            this.splitContainer1.SplitterDistance = 399;
+            this.splitContainer1.Size = new System.Drawing.Size(527, 436);
+            this.splitContainer1.SplitterDistance = 299;
             this.splitContainer1.TabIndex = 0;
-            // 
-            // dgvPhieuThue
-            // 
-            this.dgvPhieuThue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPhieuThue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvPhieuThue.Location = new System.Drawing.Point(0, 0);
-            this.dgvPhieuThue.Name = "dgvPhieuThue";
-            this.dgvPhieuThue.Size = new System.Drawing.Size(527, 162);
-            this.dgvPhieuThue.TabIndex = 0;
             // 
             // splitContainer2
             // 
@@ -112,7 +103,7 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.groupBox2);
-            this.splitContainer2.Size = new System.Drawing.Size(527, 399);
+            this.splitContainer2.Size = new System.Drawing.Size(527, 299);
             this.splitContainer2.SplitterDistance = 109;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -145,7 +136,7 @@
             // 
             // dtNgayKT
             // 
-            this.dtNgayKT.CustomFormat = "HH:mm:ss dd-MM-yyyy";
+            this.dtNgayKT.CustomFormat = " yyyy-MM-dd HH:mm:ss";
             this.dtNgayKT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtNgayKT.Location = new System.Drawing.Point(329, 53);
             this.dtNgayKT.Name = "dtNgayKT";
@@ -172,7 +163,7 @@
             // 
             // dtTimNgayBD
             // 
-            this.dtTimNgayBD.CustomFormat = "HH:mm:ss dd-MM-yyyy";
+            this.dtTimNgayBD.CustomFormat = " yyyy-MM-dd HH:mm:ss";
             this.dtTimNgayBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtTimNgayBD.Location = new System.Drawing.Point(159, 53);
             this.dtTimNgayBD.Name = "dtTimNgayBD";
@@ -210,7 +201,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(527, 286);
+            this.groupBox2.Size = new System.Drawing.Size(527, 186);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chi tiết phiếu thuê";
@@ -238,85 +229,9 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.dgvCTPhieuThue);
-            this.splitContainer3.Size = new System.Drawing.Size(521, 267);
-            this.splitContainer3.SplitterDistance = 109;
+            this.splitContainer3.Size = new System.Drawing.Size(521, 167);
+            this.splitContainer3.SplitterDistance = 89;
             this.splitContainer3.TabIndex = 0;
-            // 
-            // dgvCTPhieuThue
-            // 
-            this.dgvCTPhieuThue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCTPhieuThue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvCTPhieuThue.Location = new System.Drawing.Point(0, 0);
-            this.dgvCTPhieuThue.Name = "dgvCTPhieuThue";
-            this.dgvCTPhieuThue.Size = new System.Drawing.Size(521, 154);
-            this.dgvCTPhieuThue.TabIndex = 0;
-            // 
-            // txtMaPhieuThue
-            // 
-            this.txtMaPhieuThue.Location = new System.Drawing.Point(100, 11);
-            this.txtMaPhieuThue.Name = "txtMaPhieuThue";
-            this.txtMaPhieuThue.Size = new System.Drawing.Size(144, 20);
-            this.txtMaPhieuThue.TabIndex = 25;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 15);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 13);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Mã phiếu thuê:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 41);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 13);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "Mã phòng:";
-            // 
-            // cbMaPhong
-            // 
-            this.cbMaPhong.FormattingEnabled = true;
-            this.cbMaPhong.Location = new System.Drawing.Point(100, 37);
-            this.cbMaPhong.Name = "cbMaPhong";
-            this.cbMaPhong.Size = new System.Drawing.Size(144, 21);
-            this.cbMaPhong.TabIndex = 27;
-            // 
-            // dtNgayBD
-            // 
-            this.dtNgayBD.CustomFormat = "HH:mm:ss dd-MM-yyyy";
-            this.dtNgayBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtNgayBD.Location = new System.Drawing.Point(100, 63);
-            this.dtNgayBD.Name = "dtNgayBD";
-            this.dtNgayBD.Size = new System.Drawing.Size(144, 20);
-            this.dtNgayBD.TabIndex = 25;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 67);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 13);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "Ngày bắt đầu:";
-            // 
-            // txtLoaiPhong
-            // 
-            this.txtLoaiPhong.Location = new System.Drawing.Point(361, 11);
-            this.txtLoaiPhong.Name = "txtLoaiPhong";
-            this.txtLoaiPhong.Size = new System.Drawing.Size(144, 20);
-            this.txtLoaiPhong.TabIndex = 29;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(285, 15);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 13);
-            this.label7.TabIndex = 28;
-            this.label7.Text = "Loại phòng:";
             // 
             // txtDonGia
             // 
@@ -334,11 +249,96 @@
             this.label8.TabIndex = 30;
             this.label8.Text = "Đơn giá:";
             // 
+            // txtLoaiPhong
+            // 
+            this.txtLoaiPhong.Location = new System.Drawing.Point(361, 11);
+            this.txtLoaiPhong.Name = "txtLoaiPhong";
+            this.txtLoaiPhong.Size = new System.Drawing.Size(144, 20);
+            this.txtLoaiPhong.TabIndex = 29;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(285, 15);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(63, 13);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "Loại phòng:";
+            // 
+            // dtNgayBD
+            // 
+            this.dtNgayBD.CustomFormat = " yyyy-MM-dd HH:mm:ss";
+            this.dtNgayBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtNgayBD.Location = new System.Drawing.Point(100, 63);
+            this.dtNgayBD.Name = "dtNgayBD";
+            this.dtNgayBD.Size = new System.Drawing.Size(144, 20);
+            this.dtNgayBD.TabIndex = 25;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(7, 67);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(75, 13);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "Ngày bắt đầu:";
+            // 
+            // cbMaPhong
+            // 
+            this.cbMaPhong.FormattingEnabled = true;
+            this.cbMaPhong.Location = new System.Drawing.Point(100, 37);
+            this.cbMaPhong.Name = "cbMaPhong";
+            this.cbMaPhong.Size = new System.Drawing.Size(144, 21);
+            this.cbMaPhong.TabIndex = 27;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 41);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 13);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "Mã phòng:";
+            // 
+            // txtMaPhieuThue
+            // 
+            this.txtMaPhieuThue.Location = new System.Drawing.Point(100, 11);
+            this.txtMaPhieuThue.Name = "txtMaPhieuThue";
+            this.txtMaPhieuThue.Size = new System.Drawing.Size(144, 20);
+            this.txtMaPhieuThue.TabIndex = 25;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(7, 15);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(78, 13);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "Mã phiếu thuê:";
+            // 
+            // dgvCTPhieuThue
+            // 
+            this.dgvCTPhieuThue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCTPhieuThue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvCTPhieuThue.Location = new System.Drawing.Point(0, 0);
+            this.dgvCTPhieuThue.Name = "dgvCTPhieuThue";
+            this.dgvCTPhieuThue.Size = new System.Drawing.Size(521, 74);
+            this.dgvCTPhieuThue.TabIndex = 0;
+            // 
+            // dgvPhieuThue
+            // 
+            this.dgvPhieuThue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPhieuThue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvPhieuThue.Location = new System.Drawing.Point(0, 0);
+            this.dgvPhieuThue.Name = "dgvPhieuThue";
+            this.dgvPhieuThue.Size = new System.Drawing.Size(527, 133);
+            this.dgvPhieuThue.TabIndex = 0;
+            // 
             // PhieuThueFormView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(527, 565);
+            this.ClientSize = new System.Drawing.Size(527, 436);
             this.Controls.Add(this.splitContainer1);
             this.Name = "PhieuThueFormView";
             this.Text = "PhieuThueFormView";
@@ -346,7 +346,6 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPhieuThue)).EndInit();
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
@@ -360,6 +359,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
             this.splitContainer3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTPhieuThue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPhieuThue)).EndInit();
             this.ResumeLayout(false);
 
         }
