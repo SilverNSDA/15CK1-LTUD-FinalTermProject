@@ -37,12 +37,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvDanhMucPhong = new System.Windows.Forms.DataGridView();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaLoaiPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenLoaiPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -140,48 +134,11 @@
             // dgvDanhMucPhong
             // 
             this.dgvDanhMucPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDanhMucPhong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.STT,
-            this.MaPhong,
-            this.MaLoaiPhong,
-            this.TenPhong,
-            this.TenLoaiPhong,
-            this.DonGia});
             this.dgvDanhMucPhong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDanhMucPhong.Location = new System.Drawing.Point(0, 0);
             this.dgvDanhMucPhong.Name = "dgvDanhMucPhong";
             this.dgvDanhMucPhong.Size = new System.Drawing.Size(424, 203);
             this.dgvDanhMucPhong.TabIndex = 0;
-            // 
-            // STT
-            // 
-            this.STT.HeaderText = "STT";
-            this.STT.Name = "STT";
-            // 
-            // MaPhong
-            // 
-            this.MaPhong.HeaderText = "Mã phòng";
-            this.MaPhong.Name = "MaPhong";
-            // 
-            // MaLoaiPhong
-            // 
-            this.MaLoaiPhong.HeaderText = "Mã loại phòng";
-            this.MaLoaiPhong.Name = "MaLoaiPhong";
-            // 
-            // TenPhong
-            // 
-            this.TenPhong.HeaderText = "Tên phòng";
-            this.TenPhong.Name = "TenPhong";
-            // 
-            // TenLoaiPhong
-            // 
-            this.TenLoaiPhong.HeaderText = "Tên loại phòng";
-            this.TenLoaiPhong.Name = "TenLoaiPhong";
-            // 
-            // DonGia
-            // 
-            this.DonGia.HeaderText = "Đơn giá";
-            this.DonGia.Name = "DonGia";
             // 
             // DanhMucPhongFormView
             // 
@@ -190,7 +147,7 @@
             this.ClientSize = new System.Drawing.Size(424, 332);
             this.Controls.Add(this.splitContainer1);
             this.Name = "DanhMucPhongFormView";
-            this.Text = "DanhMucPhongFormView";
+            this.Text = "Danh mục phòng";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -214,11 +171,5 @@
         private System.Windows.Forms.TextBox txtTimMaPhong;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaPhong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaLoaiPhong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenPhong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenLoaiPhong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
     }
 }

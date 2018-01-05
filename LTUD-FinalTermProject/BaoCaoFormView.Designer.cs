@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.radioMatDoPhong = new System.Windows.Forms.RadioButton();
             this.radioDoanhThuLoai = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,19 +39,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaoCao)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(223, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Báo Cáo";
-            // 
             // radioMatDoPhong
             // 
             this.radioMatDoPhong.AutoSize = true;
+            this.radioMatDoPhong.Checked = true;
             this.radioMatDoPhong.Location = new System.Drawing.Point(84, 46);
             this.radioMatDoPhong.Name = "radioMatDoPhong";
             this.radioMatDoPhong.Size = new System.Drawing.Size(94, 17);
@@ -92,6 +82,8 @@
             // 
             // dateTimeNgayBatDau
             // 
+            this.dateTimeNgayBatDau.CustomFormat = " dd MMM,yyyy HH:mm:ss";
+            this.dateTimeNgayBatDau.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimeNgayBatDau.Location = new System.Drawing.Point(198, 73);
             this.dateTimeNgayBatDau.Name = "dateTimeNgayBatDau";
             this.dateTimeNgayBatDau.Size = new System.Drawing.Size(200, 20);
@@ -99,6 +91,8 @@
             // 
             // dateTimeNgayKetThuc
             // 
+            this.dateTimeNgayKetThuc.CustomFormat = " dd MMM,yyyy HH:mm:ss";
+            this.dateTimeNgayKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimeNgayKetThuc.Location = new System.Drawing.Point(198, 106);
             this.dateTimeNgayKetThuc.Name = "dateTimeNgayKetThuc";
             this.dateTimeNgayKetThuc.Size = new System.Drawing.Size(200, 20);
@@ -135,9 +129,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.radioDoanhThuLoai);
             this.Controls.Add(this.radioMatDoPhong);
-            this.Controls.Add(this.label1);
             this.Name = "BaoCaoFormView";
-            this.Text = "BaoCaoFormView";
+            this.Text = "Báo cáo";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaoCao)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -145,8 +138,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton radioMatDoPhong;
         private System.Windows.Forms.RadioButton radioDoanhThuLoai;
         private System.Windows.Forms.Label label2;

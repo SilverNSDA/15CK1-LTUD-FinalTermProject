@@ -226,7 +226,7 @@
             this.ClientSize = new System.Drawing.Size(535, 364);
             this.Controls.Add(this.groupBox2);
             this.Name = "KhachHangFormView";
-            this.Text = "KhachHangFormView";
+            this.Text = "Khách hàng";
             this.Load += new System.EventHandler(this.KhachHangFormView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);

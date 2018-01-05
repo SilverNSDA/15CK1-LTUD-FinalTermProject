@@ -104,7 +104,7 @@
             // 
             this.splitContainer2.Panel2.Controls.Add(this.groupBox2);
             this.splitContainer2.Size = new System.Drawing.Size(527, 299);
-            this.splitContainer2.SplitterDistance = 109;
+            this.splitContainer2.SplitterDistance = 108;
             this.splitContainer2.TabIndex = 0;
             // 
             // groupBox1
@@ -120,7 +120,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(527, 109);
+            this.groupBox1.Size = new System.Drawing.Size(527, 108);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm";
@@ -128,19 +128,20 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(312, 57);
+            this.label3.Location = new System.Drawing.Point(313, 57);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(10, 13);
             this.label3.TabIndex = 23;
             this.label3.Text = "-\r\n";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // dtNgayKT
             // 
-            this.dtNgayKT.CustomFormat = " yyyy-MM-dd HH:mm:ss";
+            this.dtNgayKT.CustomFormat = " dd MMM,yyyy HH:mm:ss";
             this.dtNgayKT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtNgayKT.Location = new System.Drawing.Point(329, 53);
             this.dtNgayKT.Name = "dtNgayKT";
-            this.dtNgayKT.Size = new System.Drawing.Size(143, 20);
+            this.dtNgayKT.Size = new System.Drawing.Size(179, 20);
             this.dtNgayKT.TabIndex = 22;
             // 
             // button2
@@ -163,11 +164,11 @@
             // 
             // dtTimNgayBD
             // 
-            this.dtTimNgayBD.CustomFormat = " yyyy-MM-dd HH:mm:ss";
+            this.dtTimNgayBD.CustomFormat = " dd MMM,yyyy HH:mm:ss";
             this.dtTimNgayBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtTimNgayBD.Location = new System.Drawing.Point(159, 53);
             this.dtTimNgayBD.Name = "dtTimNgayBD";
-            this.dtTimNgayBD.Size = new System.Drawing.Size(144, 20);
+            this.dtTimNgayBD.Size = new System.Drawing.Size(147, 20);
             this.dtTimNgayBD.TabIndex = 19;
             // 
             // label2
@@ -201,7 +202,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(527, 186);
+            this.groupBox2.Size = new System.Drawing.Size(527, 187);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chi tiết phiếu thuê";
@@ -229,7 +230,7 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.dgvCTPhieuThue);
-            this.splitContainer3.Size = new System.Drawing.Size(521, 167);
+            this.splitContainer3.Size = new System.Drawing.Size(521, 168);
             this.splitContainer3.SplitterDistance = 89;
             this.splitContainer3.TabIndex = 0;
             // 
@@ -267,11 +268,11 @@
             // 
             // dtNgayBD
             // 
-            this.dtNgayBD.CustomFormat = " yyyy-MM-dd HH:mm:ss";
+            this.dtNgayBD.CustomFormat = " dd MMM,yyyy HH:mm:ss";
             this.dtNgayBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtNgayBD.Location = new System.Drawing.Point(100, 63);
             this.dtNgayBD.Name = "dtNgayBD";
-            this.dtNgayBD.Size = new System.Drawing.Size(144, 20);
+            this.dtNgayBD.Size = new System.Drawing.Size(158, 20);
             this.dtNgayBD.TabIndex = 25;
             // 
             // label6
@@ -288,7 +289,7 @@
             this.cbMaPhong.FormattingEnabled = true;
             this.cbMaPhong.Location = new System.Drawing.Point(100, 37);
             this.cbMaPhong.Name = "cbMaPhong";
-            this.cbMaPhong.Size = new System.Drawing.Size(144, 21);
+            this.cbMaPhong.Size = new System.Drawing.Size(158, 21);
             this.cbMaPhong.TabIndex = 27;
             // 
             // label5
@@ -304,7 +305,7 @@
             // 
             this.txtMaPhieuThue.Location = new System.Drawing.Point(100, 11);
             this.txtMaPhieuThue.Name = "txtMaPhieuThue";
-            this.txtMaPhieuThue.Size = new System.Drawing.Size(144, 20);
+            this.txtMaPhieuThue.Size = new System.Drawing.Size(158, 20);
             this.txtMaPhieuThue.TabIndex = 25;
             // 
             // label4
@@ -322,7 +323,7 @@
             this.dgvCTPhieuThue.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCTPhieuThue.Location = new System.Drawing.Point(0, 0);
             this.dgvCTPhieuThue.Name = "dgvCTPhieuThue";
-            this.dgvCTPhieuThue.Size = new System.Drawing.Size(521, 74);
+            this.dgvCTPhieuThue.Size = new System.Drawing.Size(521, 75);
             this.dgvCTPhieuThue.TabIndex = 0;
             // 
             // dgvPhieuThue
