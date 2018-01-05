@@ -139,7 +139,7 @@
             this.Controls.Add(this.txtHoTen);
             this.Controls.Add(this.label1);
             this.Name = "TaoKhachHangFormView";
-            this.Text = "TaoKhachHangFormView";
+            this.Text = "Tạo khách hàng";
             this.ResumeLayout(false);
             this.PerformLayout();
 

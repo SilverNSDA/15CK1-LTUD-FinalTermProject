@@ -34,14 +34,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cbMaPhong = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dgvKH = new System.Windows.Forms.DataGridView();
             this.btnTaoKH = new System.Windows.Forms.Button();
             this.btnHuyTao = new System.Windows.Forms.Button();
             this.btnTao = new System.Windows.Forms.Button();
             this.ThemKH = new System.Windows.Forms.Button();
             this.btnXoaKH = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dgvKH = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -123,6 +123,25 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã phòng:";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dgvKH);
+            this.groupBox2.Location = new System.Drawing.Point(34, 34);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(433, 100);
+            this.groupBox2.TabIndex = 11;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Khách hàng";
+            // 
+            // dgvKH
+            // 
+            this.dgvKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKH.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvKH.Location = new System.Drawing.Point(3, 16);
+            this.dgvKH.Name = "dgvKH";
+            this.dgvKH.Size = new System.Drawing.Size(427, 81);
+            this.dgvKH.TabIndex = 0;
+            // 
             // btnTaoKH
             // 
             this.btnTaoKH.Location = new System.Drawing.Point(330, 148);
@@ -177,25 +196,6 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Khách hàng:";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.dgvKH);
-            this.groupBox2.Location = new System.Drawing.Point(34, 34);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(433, 100);
-            this.groupBox2.TabIndex = 11;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Khách hàng";
-            // 
-            // dgvKH
-            // 
-            this.dgvKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKH.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvKH.Location = new System.Drawing.Point(3, 16);
-            this.dgvKH.Name = "dgvKH";
-            this.dgvKH.Size = new System.Drawing.Size(427, 81);
-            this.dgvKH.TabIndex = 0;
-            // 
             // TaoPhieuThueFormView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,7 +203,7 @@
             this.ClientSize = new System.Drawing.Size(506, 360);
             this.Controls.Add(this.splitContainer1);
             this.Name = "TaoPhieuThueFormView";
-            this.Text = "TaoPhieuThueFormView";
+            this.Text = "Tạo phiếu thuê";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();
