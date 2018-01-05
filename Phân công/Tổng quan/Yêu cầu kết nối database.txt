@@ -1,4 +1,4 @@
-﻿Yêu cầu 1: tìm free database host
+﻿
 Yêu cầu 2: viết class DataUtil trong DataUtil.cs để nhận dữ liệu từ database bao gồm:
 	các hàm tên TableData<Tên table trong database> 
 	các hàm để gọi store function ứng với mỗi bảng (xem yêu cầu database) 
