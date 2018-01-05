@@ -1,0 +1,22 @@
+﻿Viết query insert dữ liệu mẫu vào các table:
+	table PHONG: 10 dòng dữ liệu
+		quy ước:
+			ID là tổ hợp của ID loại phòng và số thứ tự. ví dụ phòng có loại phòng là A thì 			ID Phong sẽ là A1, A2, A3
+
+--------------------------------------------------
+	table LOAIPHONG: 6 dòng dữ liệu gồm các loại sau: 
+		(ID, DonGia) = (A,150) (B,170) (C,200)
+	Lưu ý bổ sung loại phòng cho PHONG
+--------------------------------------------------
+	table KHACHHANG:10 dòng dữ liệu
+		data thế nào tự chế nhé
+	Lưu ý CMND có mấy số, chế đừng chế quá liều
+--------------------------------------------------
+	table LOAIKHACHHANG: 2 dòng cho khách nội địa và khách nước ngoài
+--------------------------------------------------
+	table QUYDINH: (mô tả, giá trị)
+		dòng 1: (n'Phụ thu khách thứ 3(%)',25)
+		dòng 2: (n'Khách nước ngoài (hệ số nhân)',1.5)
+		dòng 3: (n'Số lượng khách tối đa trong phòng',3)
+--------------------------------------------------
+	các table còn lại sẽ làm sau
