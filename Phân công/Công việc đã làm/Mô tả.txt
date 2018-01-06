@@ -9,6 +9,7 @@
 - Công việc 1: hoàn thành
 - Công việc 2: hoàn thành
 - Công việc 3: hoàn thành
+=> Gôm thành 1 query (hoàn thành)
 * Yêu cầu chỉnh sửa:
 - Yêu cầu 1: hoàn thành
 - Yêu cầu 2: hoàn thành
