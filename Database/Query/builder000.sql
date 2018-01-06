@@ -1,5 +1,6 @@
 Create database QLKhachSan
 go
+use QLKhachSan
 
 Create table PHONG(
 	ID nchar(10),
