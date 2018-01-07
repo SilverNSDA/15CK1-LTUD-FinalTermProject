@@ -23,18 +23,20 @@ Xem công việc đã hoàn thành trong folder "Phân công/Công việc đã h
 
 
 Tóm tắt công việc: <br>
-Làm UI : 5/6<br>
+Làm UI : 6/6<br>
 Tạo database: 3/3<br>
-Store function database: 0/3<br>
+Store function database: 3/3<br>
 Thiết kế các datagridview:0/7<br>
 Code thực thi: 0/0<br>
 Thiết kế code thực thi: 0/7<br>
 Yêu cầu kết nối database: 0/3<br>
+Trigger cho database: 0/ 1 đống  (0%)=)) <br>
 
 
 	TODO và lưu ý:
 		
 		Các công việc cần làm hiện nay: 
-			Hoàn thành 'Làm UI'
+			Hoàn thành 'Làm UI' (90%)
 			Yêu cầu thiết kế các datagridview
 			Hoàn thành 'Yêu cầu kết nối database'
+			

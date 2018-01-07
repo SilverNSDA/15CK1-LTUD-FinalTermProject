@@ -1,0 +1,10 @@
+﻿Sửa stored function INSERT của table PhieuThue
+	bỏ param @NBD, và declare và set @NBD là ngày giờ hiện tại của server
+Sửa stored function UPDATE của table PhieuThue
+	bỏ param @NBD, và không update @NBD
+
+Sửa stored function INSERT của table HoaDon
+	bỏ param @NTT, và declare và set @NTT là ngày giờ hiện tại của server
+Sửa stored function UPDATE của table HoaDon
+	bỏ param @NTT, và không update @NTT
+
