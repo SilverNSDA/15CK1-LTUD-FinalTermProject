@@ -135,3 +135,5 @@ insert into KHACHHANG values('KH00010',N'Nguyễn Hoàng Duy','L00001','25341734
 insert into QUYDINH values('QD00001',N'Phụ thu khách thứ 3(%)',25)
 insert into QUYDINH values('QD00002',N'Khách nước ngoài (hệ số nhân)',1.5)
 insert into QUYDINH values('QD00003',N'Số lượng khách tối đa trong phòng',3)
+
+
