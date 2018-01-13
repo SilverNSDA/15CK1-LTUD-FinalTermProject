@@ -30,6 +30,6 @@ insert into KHACHHANG values('KH00008',N'Hoàng Đình Sơn Dương','L00001','2
 insert into KHACHHANG values('KH00009',N'Nguyễn Nguyên Anh','L00001','2736984915',N'10 Hồ Xuân Hương')
 insert into KHACHHANG values('KH00010',N'Nguyễn Hoàng Duy','L00001','2534173418',N'44 Nguyễn Đình Chiểu')
 
-insert into QUYDINH values('QD00001',N'Phụ thu khách thứ 3(%)',25,'%')
-insert into QUYDINH values('QD00002',N'Khách nước ngoài (hệ số nhân)',1.5,'*')
-insert into QUYDINH values('QD00003',N'Số lượng khách tối đa trong phòng',3,'unit')
+insert into QUYDINH values('QD00001',N'Phụ thu khách thứ 3(%)',25)
+insert into QUYDINH values('QD00002',N'Khách nước ngoài (hệ số nhân)',1.5)
+insert into QUYDINH values('QD00003',N'Số lượng khách tối đa trong phòng',3)
