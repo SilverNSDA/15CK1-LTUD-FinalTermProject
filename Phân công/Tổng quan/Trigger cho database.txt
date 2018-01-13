@@ -1,66 +1,63 @@
 ﻿Tạo trigger cho các table sau:
 
--Table LoaiPhong FOR INSERT
+*-Table LoaiPhong FOR INSERT
 	Kiểm tra @ID tồn tại hay chưa. nếu đã tồn tại, rollback và báo lỗi
 
--Table LoaiPhong FOR UPDATE
+*-Table LoaiPhong FOR UPDATE
 	Kiểm tra @ID tồn tại hay chưa. nếu đã tồn tại, rollback và báo lỗi
 	kiểm tra nếu @ID exists SELECT LoaiPhong FROM Phong. Nếu có tồn tại thì UPDATE Loại phòng chủa -table Phong
 	
--Table LoaiPhong FOR DELETE
+*-Table LoaiPhong FOR DELETE
 	kiểm tra nếu @ID exists SELECT LoaiPhong FROM Phong. báo lỗi ('Không thể xóa. Hiện có {0} phòng thuộc loại phòng này.',count(SELECT LoaiPhong FROM Phong WHERE LoaiPhong=@ID)) và rollback
 
 
 
 
--Table Phong FOR INSERT UPDATE
+*-Table Phong FOR INSERT UPDATE
 	Kiểm tra @ID, @LoaiPhong, nếu @ID đã tồn tại thì rollback và báo lỗi, nếu @LoaiPhong chưa tồn tại thì rollback và báo lỗi
 
 
 
 
--Table PhieuThue FOR INSERT UPDATE
+*-Table PhieuThue FOR INSERT UPDATE
 	Kiểm tra @ID tồn tại, nều đã tồn tại thì báo lỗi roll back
 
--Table PhieuThue FOR DELETE
+*-Table PhieuThue FOR DELETE
 	Kiểm tra @ID exists SELECT MaPhieuThue FROM HoaDon, nếu đã tồn tại thì báo lỗi('Phiếu thuê đã thanh toán, không thể xóa') và rollback
 	Kiểm tra @ID exists SELECT MaPhieuThue FROM CT_PhieuThue, nếu còn còn xóa hết tất cả dòng có MaPhieuThue=@ID trong bảng CT_PhieuThue
 
 
 
--Table KhachHang FOR UPDATE INSERT
+*-Table KhachHang FOR UPDATE INSERT
 	Kiểm tra @ID, @CMND, nếu 1 trong 2 đã tồn tại thì báo lỗi và roll back
 	Kiểm tra @LoaiKhachHang, nếu chưa tồn tại thì báo lỗi và rollback
 
--Table KhachHang FOR DELETE
+*-Table KhachHang FOR DELETE
 	Báo lỗi ('Không thể xóa khách hàng') và rollback
 
 
--Table LoaiKhachHang FOR INSERT
+*-Table LoaiKhachHang FOR INSERT
 	Kiểm tra @ID đã tồn tại hay chưa, nếu đã tồn tại thì báo lỗi và roll back
 
--Table LoaiKhachHang FOR UPDATE
+*-Table LoaiKhachHang FOR UPDATE
 	Kiểm tra @ID đã tồn tại hay chưa, nếu đã tồn tại thì báo lỗi và roll back
-	kiểm tra nếu @ID exists SELECT LoaiKH FROM KhachHang. Nếu tồn tại thì UPDATE LoaiKH cho table KhachHang
 
--Table LoaiKhachHang FOR DELETE
+
+*-Table LoaiKhachHang FOR DELETE
 	kiểm tra nếu @ID exists SELECT LoaiKH FROM KhachHang. báo lỗi ('Không thể xóa. Hiện có {0} khách hàng thuộc loại này.',count(SELECT LoaiKH FROM KhachHang WHERE LoaiKH=@ID)) và rollback
 
 
--Table CT_PhieuThue FOR UPDATE INSERT
+*-Table CT_PhieuThue FOR UPDATE INSERT
 	Kiểm tra @ID đã tồn tại hay chưa, nếu đã tồn tại thì báo lỗi và roll back
 	Kiểm tra @MPT exists SLECT ID FROM PhieuThue, nếu chưa tồn tại thì báo lỗi và rollback
 
--Table HoaDon FOR UPDATE INSERT
+*-Table HoaDon FOR UPDATE INSERT
 	Kiểm tra @MaPhieuThue exists SELECT ID FROM PhieuThue, nếu không tồn tại thì báo lỗi và roll back
 	Kiểm tra @MaKhachHang exists SELECT ID FROM KhachHang, nếu không tồn tại thì báo lỗi và rollback
 
 
--Table QuyDinh FOR UPDATE INSERT
+*-Table QuyDinh FOR UPDATE
 	Kiểm tra @ID đã tồn tại hay chưa, nếu đã tồn tại thì báo lỗi và roll back
-
--Table QuyDinh FOR DELETE
-	Nếu @ID thuộc ['QD00001','QD00002','QD00003'] thì báo lỗi ('Không thể xóa quy định mặc định') và rollback
 
 
 

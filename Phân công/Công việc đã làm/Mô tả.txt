@@ -23,4 +23,4 @@
 -table KHACHHANG: hoàn thành
 -table LOAIKHACHHANG: hoàn thành
 -table QUYDINH: hoàn thành
-
+*Trigger cho database: hoàn thành 

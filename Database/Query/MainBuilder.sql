@@ -1,6 +1,9 @@
 use master
 go
-drop database if exists QLKhachSan
+IF EXISTS(SELECT name FROM sys.databases
+    WHERE name = 'QLKhachSan')
+    DROP DATABASE QLKhachSan
+GO
 Create database QLKhachSan
 go
 use QLKhachSan
