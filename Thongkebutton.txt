@@ -1,0 +1,7 @@
+BaoCaoFormView[Design].cs [ button_baocao ]
+DanhMucPhongFormView[Design].cs [ buttom_timkiem ]
+KhachHangFormView[Design].cs [ button_tomkiem ; button_themkhachhang ]
+MenuFormView[Design].cs [ button_danhmucphong ; button_phieuthuephong ; button_khachhang ; button_baocao ]
+PhieuThueFormView[Design].cs [ button_tao ; button_timkiem ]
+TaoKhachHangFormView[Design].cs [ button_themkhachhang ; button_huy ]
+TaoPhieuThue[Design].cs [ button_xoakhachhang ; button_themkhachhang ; button_taokhachhang ; button_taophieuthue ;  button_huy ]
