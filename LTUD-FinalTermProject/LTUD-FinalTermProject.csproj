@@ -51,20 +51,12 @@
     <Compile Include="BaoCaoFormView.Designer.cs">
       <DependentUpon>BaoCaoFormView.cs</DependentUpon>
     </Compile>
-    <Compile Include="CT_PhieuThue.cs" />
     <Compile Include="DanhMucPhongFormView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DanhMucPhongFormView.Designer.cs">
       <DependentUpon>DanhMucPhongFormView.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataUtil.cs" />
-    <Compile Include="DT_TheoLoaiPhong.cs" />
-    <Compile Include="HoaDon.cs" />
-    <Compile Include="KhachHang.cs" />
-    <Compile Include="LoaiKhachHang.cs" />
-    <Compile Include="LoaiPhong.cs" />
-    <Compile Include="MD_SuDungPhong.cs" />
     <Compile Include="MenuFormView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,17 +69,14 @@
     <Compile Include="KhachHangFormView.Designer.cs">
       <DependentUpon>KhachHangFormView.cs</DependentUpon>
     </Compile>
-    <Compile Include="PhieuThue.cs" />
     <Compile Include="PhieuThueFormView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PhieuThueFormView.Designer.cs">
       <DependentUpon>PhieuThueFormView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Phong.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuyDinh.cs" />
     <Compile Include="TaoKhachHangFormView.cs">
       <SubType>Form</SubType>
     </Compile>

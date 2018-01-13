@@ -8,6 +8,5 @@ namespace LTUD_FinalTermProject
 {
     class DataUtil
     {
-
     }
 }
