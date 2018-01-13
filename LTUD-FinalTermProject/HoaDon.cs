@@ -12,7 +12,8 @@ namespace LTUD_FinalTermProject
         public string MaPhieuThue { get; set; }
         public string MaKhachHang { get; set; }
         public DateTime NgayThanhToan { get; set; }
-        public static int iMaPhieuThue = 0, iMaKhachHang = 1, iNgayThanhToan = 2;
+        public int GiaTri { get; set; }
+        public static int iMaPhieuThue = 0, iMaKhachHang = 1, iNgayThanhToan = 2, iGiaTri = 3;
 
         public static HoaDon Read(SqlDataReader reader)
         {
@@ -20,7 +21,8 @@ namespace LTUD_FinalTermProject
             {
                 MaPhieuThue = reader.GetString(iMaPhieuThue),
                 MaKhachHang = reader.GetString(iMaKhachHang),
-                NgayThanhToan=reader.GetDateTime(iNgayThanhToan)
+                NgayThanhToan = reader.GetDateTime(iNgayThanhToan),
+                GiaTri = reader.GetInt32(iGiaTri)
             };
             return ctpt;
         }

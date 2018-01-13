@@ -250,7 +250,8 @@ GO
 CREATE PROCEDURE update_row_QUYDINH
 @ID nchar(10),
 @MT text,
-@GT float
+@GT float,
+@DV nchar(5)
 AS
 BEGIN
 	UPDATE QUYDINH
