@@ -22,8 +22,8 @@ namespace LTUD_FinalTermProject
                 LoaiPhong = reader.GetString(iLoaiPhong),
                 GhiChu = reader.GetString(iGhiChu)
             };
-            byte[] bytes = Encoding.Default.GetBytes(p.GhiChu);
-            p.GhiChu = Encoding.UTF8.GetString(bytes);
+            //byte[] bytes = Encoding.Default.GetBytes(p.GhiChu);
+            //p.GhiChu = Encoding.UTF8.GetString(bytes);
             return p;
 
         }

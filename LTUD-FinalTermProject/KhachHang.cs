@@ -26,10 +26,10 @@ namespace LTUD_FinalTermProject
                 CMND = reader.GetString(iCMND),
                 DiaChi = reader.GetString(iDiaChi)
             };
-            var bytes = Encoding.Default.GetBytes(kh.HoTen);
-            kh.HoTen = Encoding.UTF8.GetString(bytes);
-            bytes = Encoding.Default.GetBytes(kh.DiaChi);
-            kh.DiaChi = Encoding.UTF8.GetString(bytes);
+            //var bytes = Encoding.Default.GetBytes(kh.HoTen);
+            //kh.HoTen = Encoding.UTF8.GetString(bytes);
+            //bytes = Encoding.Default.GetBytes(kh.DiaChi);
+            //kh.DiaChi = Encoding.UTF8.GetString(bytes);
             return kh;
         }
     }

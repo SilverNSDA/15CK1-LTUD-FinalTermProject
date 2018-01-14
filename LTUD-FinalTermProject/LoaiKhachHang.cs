@@ -20,8 +20,8 @@ namespace LTUD_FinalTermProject
                 ID = reader.GetString(iID),
                 TenLoai = reader.GetString(iTenLoai)
             };
-            byte[] bytes = Encoding.Default.GetBytes(lkh.TenLoai);
-            lkh.TenLoai = Encoding.UTF8.GetString(bytes);
+            //byte[] bytes = Encoding.Default.GetBytes(lkh.TenLoai);
+            //lkh.TenLoai = Encoding.UTF8.GetString(bytes);
             return lkh;
         }
     }

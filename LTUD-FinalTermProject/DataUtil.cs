@@ -12,7 +12,6 @@ namespace LTUD_FinalTermProject
     class DataUtil
     {
         static string cnString;
-        static string nameCS = "sqlPC_QLSV";
         static SqlConnection cn;
         static DataUtil()
         {
