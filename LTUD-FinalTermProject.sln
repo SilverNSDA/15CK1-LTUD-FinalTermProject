@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LTUD-FinalTermProject", "LTUD-FinalTermProject\LTUD-FinalTermProject.csproj", "{C9CF6818-8A37-45ED-A0B7-5D65E62B9D6C}"
 EndProject

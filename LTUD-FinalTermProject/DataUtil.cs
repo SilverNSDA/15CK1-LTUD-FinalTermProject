@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using System.Configuration;
 
 
 namespace LTUD_FinalTermProject
@@ -12,10 +13,12 @@ namespace LTUD_FinalTermProject
     class DataUtil
     {
         static string cnString;
+        static string nameCS = "default";
         static SqlConnection cn;
         static DataUtil()
         {
-            cnString = "Data Source=DESKTOP-FHDO5A5\\SQLEXPRESS;database=QLKhachSan;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            cnString = ConfigurationManager.ConnectionStrings[nameCS].ConnectionString;
+            //cnString = "Data Source=DESKTOP-FHDO5A5\\SQLEXPRESS;database=QLKhachSan;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             cn = new SqlConnection(cnString);
 
         }
