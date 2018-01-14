@@ -33,8 +33,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dtNgayKT = new System.Windows.Forms.DateTimePicker();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.bntTaoPhieuThue = new System.Windows.Forms.Button();
             this.dtTimNgayBD = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.txtTimMaPhieuThue = new System.Windows.Forms.TextBox();
@@ -111,8 +111,8 @@
             // 
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.dtNgayKT);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnTimKiem);
+            this.groupBox1.Controls.Add(this.bntTaoPhieuThue);
             this.groupBox1.Controls.Add(this.dtTimNgayBD);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtTimMaPhieuThue);
@@ -144,23 +144,25 @@
             this.dtNgayKT.Size = new System.Drawing.Size(179, 20);
             this.dtNgayKT.TabIndex = 22;
             // 
-            // button2
+            // btnTimKiem
             // 
-            this.button2.Location = new System.Drawing.Point(407, 79);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(65, 23);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "Tìm kiếm";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Location = new System.Drawing.Point(407, 79);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(65, 23);
+            this.btnTimKiem.TabIndex = 21;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
-            // button1
+            // bntTaoPhieuThue
             // 
-            this.button1.Location = new System.Drawing.Point(329, 79);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(63, 23);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Tạo";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bntTaoPhieuThue.Location = new System.Drawing.Point(329, 79);
+            this.bntTaoPhieuThue.Name = "bntTaoPhieuThue";
+            this.bntTaoPhieuThue.Size = new System.Drawing.Size(63, 23);
+            this.bntTaoPhieuThue.TabIndex = 20;
+            this.bntTaoPhieuThue.Text = "Tạo";
+            this.bntTaoPhieuThue.UseVisualStyleBackColor = true;
+            this.bntTaoPhieuThue.Click += new System.EventHandler(this.bntTaoPhieuThue_Click);
             // 
             // dtTimNgayBD
             // 
@@ -373,8 +375,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dtNgayKT;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.Button bntTaoPhieuThue;
         private System.Windows.Forms.DateTimePicker dtTimNgayBD;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTimMaPhieuThue;

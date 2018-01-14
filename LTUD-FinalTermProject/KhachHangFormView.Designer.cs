@@ -92,6 +92,7 @@
             this.buttonTimKiem.TabIndex = 6;
             this.buttonTimKiem.Text = "TimKiem";
             this.buttonTimKiem.UseVisualStyleBackColor = true;
+            this.buttonTimKiem.Click += new System.EventHandler(this.buttonTimKiem_Click);
             // 
             // dgvKhachHang
             // 
