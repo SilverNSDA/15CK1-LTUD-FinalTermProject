@@ -28,10 +28,10 @@ namespace LTUD_FinalTermProject
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnKhachHang = new System.Windows.Forms.Button();
+            this.btnBaoCao = new System.Windows.Forms.Button();
+            this.btnDanhMucPhong = new System.Windows.Forms.Button();
+            this.btnPhieuThuePhong = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -70,49 +70,53 @@ namespace LTUD_FinalTermProject
             this.label5.TabIndex = 4;
             this.label5.Text = "Báo cáo";
             // 
-            // button1
+            // btnKhachHang
             // 
-            this.button1.Location = new System.Drawing.Point(289, 35);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnKhachHang.Location = new System.Drawing.Point(289, 35);
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.Size = new System.Drawing.Size(75, 23);
+            this.btnKhachHang.TabIndex = 5;
+            this.btnKhachHang.Text = "button1";
+            this.btnKhachHang.UseVisualStyleBackColor = true;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
-            // button2
+            // btnBaoCao
             // 
-            this.button2.Location = new System.Drawing.Point(156, 121);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBaoCao.Location = new System.Drawing.Point(156, 121);
+            this.btnBaoCao.Name = "btnBaoCao";
+            this.btnBaoCao.Size = new System.Drawing.Size(75, 23);
+            this.btnBaoCao.TabIndex = 6;
+            this.btnBaoCao.Text = "button2";
+            this.btnBaoCao.UseVisualStyleBackColor = true;
+            this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
             // 
-            // button3
+            // btnDanhMucPhong
             // 
-            this.button3.Location = new System.Drawing.Point(15, 35);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDanhMucPhong.Location = new System.Drawing.Point(15, 35);
+            this.btnDanhMucPhong.Name = "btnDanhMucPhong";
+            this.btnDanhMucPhong.Size = new System.Drawing.Size(75, 23);
+            this.btnDanhMucPhong.TabIndex = 7;
+            this.btnDanhMucPhong.Text = "button3";
+            this.btnDanhMucPhong.UseVisualStyleBackColor = true;
+            this.btnDanhMucPhong.Click += new System.EventHandler(this.btnDanhMucPhong_Click);
             // 
-            // button4
+            // btnPhieuThuePhong
             // 
-            this.button4.Location = new System.Drawing.Point(156, 35);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnPhieuThuePhong.Location = new System.Drawing.Point(156, 35);
+            this.btnPhieuThuePhong.Name = "btnPhieuThuePhong";
+            this.btnPhieuThuePhong.Size = new System.Drawing.Size(75, 23);
+            this.btnPhieuThuePhong.TabIndex = 8;
+            this.btnPhieuThuePhong.Text = "button4";
+            this.btnPhieuThuePhong.UseVisualStyleBackColor = true;
+            this.btnPhieuThuePhong.Click += new System.EventHandler(this.btnPhieuThuePhong_Click);
             // 
             // MenuFormView
             // 
             this.ClientSize = new System.Drawing.Size(387, 261);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnPhieuThuePhong);
+            this.Controls.Add(this.btnDanhMucPhong);
+            this.Controls.Add(this.btnBaoCao);
+            this.Controls.Add(this.btnKhachHang);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -122,6 +126,31 @@ namespace LTUD_FinalTermProject
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+            BaoCaoFormView baocao = new BaoCaoFormView();
+            baocao.Show();
+
+        }
+
+        private void btnDanhMucPhong_Click(object sender, EventArgs e)
+        {
+            DanhMucPhongFormView danhmucphong = new DanhMucPhongFormView();
+            danhmucphong.Show();
+        }
+
+        private void btnPhieuThuePhong_Click(object sender, EventArgs e)
+        {
+            PhieuThueFormView phieuthuephong = new PhieuThueFormView();
+            phieuthuephong.Show();
+        }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            KhachHangFormView khachhang = new KhachHangFormView();
+            khachhang.Show();
         }
     }
 }
