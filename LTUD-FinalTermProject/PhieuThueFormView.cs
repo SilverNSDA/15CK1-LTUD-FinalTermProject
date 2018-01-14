@@ -54,5 +54,48 @@ namespace LTUD_FinalTermProject
         {
 
         }
+
+        private void bntTaoPhieuThue_Click(object sender, EventArgs e)
+        {
+            PhieuThueFormView phieuthue = new PhieuThueFormView();
+            phieuthue.Show();
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            List<PhieuThue> searchResult;
+            searchResult = searchPhieuThue(txtTimMaPhieuThue.Text, dtNgayBD.Value, dtNgayKT.Value);
+            populateDGVPhieuThue(searchResult);
+        }
+        private List<PhieuThue> searchPhieuThue(string maphieuthue = null,DateTime ngaybd, DateTime ngaykt)
+        {
+            var dpt = DataUtil.DSPhieuThue();
+            List<PhieuThue> result = new List<PhieuThue>();
+            if(maphieuthue == null)
+            {
+                foreach(var pt in dpt)
+                {
+                    if(pt.NgayBatDau <= ngaykt && pt.NgayBatDau >= ngaybd)
+                    {
+                        result.Add(pt);
+                    }
+                }
+            }
+            else if(maphieuthue != null)
+            {
+                foreach(var pt in dpt)
+                {
+                    if(pt.ID == maphieuthue && pt.NgayBatDau <= ngaykt && pt.NgayBatDau >= ngaybd)
+                    {
+                        result.Add(pt);
+                    }
+                }
+            }
+            return result;
+        }
+        private void populateDGVPhieuThue(List<PhieuThue> searchResult)
+        {
+
+        }
     }
 }

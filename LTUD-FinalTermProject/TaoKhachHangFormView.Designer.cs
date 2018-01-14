@@ -32,9 +32,9 @@
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cbLoaiKH = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCMND = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnThemKH = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -73,12 +73,12 @@
             this.cbLoaiKH.Size = new System.Drawing.Size(191, 21);
             this.cbLoaiKH.TabIndex = 3;
             // 
-            // textBox1
+            // txtCMND
             // 
-            this.textBox1.Location = new System.Drawing.Point(110, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtCMND.Location = new System.Drawing.Point(110, 92);
+            this.txtCMND.Name = "txtCMND";
+            this.txtCMND.Size = new System.Drawing.Size(191, 20);
+            this.txtCMND.TabIndex = 5;
             // 
             // label3
             // 
@@ -89,12 +89,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "CMND:";
             // 
-            // textBox2
+            // txtDiaChi
             // 
-            this.textBox2.Location = new System.Drawing.Point(110, 124);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 20);
-            this.textBox2.TabIndex = 7;
+            this.txtDiaChi.Location = new System.Drawing.Point(110, 124);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(191, 20);
+            this.txtDiaChi.TabIndex = 7;
             // 
             // label4
             // 
@@ -113,6 +113,7 @@
             this.btnThemKH.TabIndex = 8;
             this.btnThemKH.Text = "Thêm khách hàng";
             this.btnThemKH.UseVisualStyleBackColor = true;
+            this.btnThemKH.Click += new System.EventHandler(this.btnThemKH_Click);
             // 
             // btnCancel
             // 
@@ -122,6 +123,7 @@
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Hủy";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // TaoKhachHangFormView
             // 
@@ -130,9 +132,9 @@
             this.ClientSize = new System.Drawing.Size(323, 202);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnThemKH);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtDiaChi);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCMND);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbLoaiKH);
             this.Controls.Add(this.label2);
@@ -151,9 +153,9 @@
         private System.Windows.Forms.TextBox txtHoTen;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbLoaiKH;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCMND;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnThemKH;
         private System.Windows.Forms.Button btnCancel;
