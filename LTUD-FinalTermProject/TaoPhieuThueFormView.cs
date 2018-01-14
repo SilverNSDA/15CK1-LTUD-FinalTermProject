@@ -14,16 +14,18 @@ namespace LTUD_FinalTermProject
     {
         public TaoPhieuThueFormView()
         {
-            dgvKH.Columns[0].Name = "ID";
-            dgvKH.Columns[1].Name = "HoTen";
-            dgvKH.Columns[2].Name = "DiaChi";
-            dgvKH.Columns[3].Name = "LoaiKH";
-            dgvKH.Columns[4].Name = "CMND";
             xuat();
             InitializeComponent();
         }
         public void xuat()
         {
+
+            dgvKH.Columns[0].Name = "ID";
+            dgvKH.Columns[1].Name = "HoTen";
+            dgvKH.Columns[2].Name = "DiaChi";
+            dgvKH.Columns[3].Name = "LoaiKH";
+            dgvKH.Columns[4].Name = "CMND";
+
             DataGridViewRow row = dgvKH.CurrentRow;
             var kh = DataUtil.DSKhachHang();
             foreach (var khh in kh)

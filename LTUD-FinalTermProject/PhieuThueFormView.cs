@@ -14,6 +14,13 @@ namespace LTUD_FinalTermProject
     {
         public PhieuThueFormView()
         {
+           
+            xuatpt();
+            
+            InitializeComponent();
+        }
+        public void xuatpt()
+        {
             dgvCTPhieuThue.Columns[0].Name = "ID";
             dgvCTPhieuThue.Columns[1].Name = "MaPhieuThue";
             dgvCTPhieuThue.Columns[2].Name = "MaKhachHang";
@@ -21,12 +28,7 @@ namespace LTUD_FinalTermProject
             dgvPhieuThue.Columns[0].Name = "ID";
             dgvPhieuThue.Columns[0].Name = "MaPhong";
             dgvPhieuThue.Columns[0].Name = "NgayBatDau";
-            xuatpt();
-            
-            InitializeComponent();
-        }
-        public void xuatpt()
-        {
+
             DataGridViewRow row = dgvCTPhieuThue.CurrentRow;
             var kh = DataUtil.DSCT_PhieuThue();
             foreach (var khh in kh)

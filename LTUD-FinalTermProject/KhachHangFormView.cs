@@ -15,15 +15,16 @@ namespace LTUD_FinalTermProject
         public KhachHangFormView()
         {
             InitializeComponent();
-            dgvKhachHang.Columns [0] .Name = "ID";
-            dgvKhachHang.Columns[1].Name = "HoTen";
-            dgvKhachHang.Columns[2].Name = "DiaChi";
-            dgvKhachHang.Columns[3].Name = "LoaiKH";
-            dgvKhachHang.Columns[4].Name = "CMND";
+            
             xuat();
         }
         public void xuat()
         {
+            dgvKhachHang.Columns[0].Name = "ID";
+            dgvKhachHang.Columns[1].Name = "HoTen";
+            dgvKhachHang.Columns[2].Name = "DiaChi";
+            dgvKhachHang.Columns[3].Name = "LoaiKH";
+            dgvKhachHang.Columns[4].Name = "CMND";
             DataGridViewRow row = dgvKhachHang.CurrentRow;
             var kh = DataUtil.DSKhachHang();
             foreach (var khh in kh)
