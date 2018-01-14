@@ -14,26 +14,26 @@ namespace LTUD_FinalTermProject
     {
         public TaoPhieuThueFormView()
         {
-            dgvKH.Columns[0].Name = "ID";
-            dgvKH.Columns[1].Name = "HoTen";
-            dgvKH.Columns[2].Name = "DiaChi";
-            dgvKH.Columns[3].Name = "LoaiKH";
-            dgvKH.Columns[4].Name = "CMND";
-            xuat();
+            IninitializeDGV();
             InitializeComponent();
         }
-        public void xuat()
+        public void IninitializeDGV()
         {
-            DataGridViewRow row = dgvKH.CurrentRow;
-            var kh = DataUtil.DSKhachHang();
-            foreach (var khh in kh)
-            {
-                row.Cells["ID"].Value = khh.ID;
-                row.Cells["HoTen"].Value = khh.HoTen;
-                row.Cells["DiaChi"].Value = khh.DiaChi;
-                row.Cells["LoaiKH"].Value = khh.LoaiKhachHang;
-                row.Cells["CMND"].Value = khh.CMND;
-            }
+
+            dgvKH.Columns.Add("ID", "MaKhachHang");
+            dgvKH.Columns.Add("HoTen", "HoTenKhachHang");
+            dgvKH.Columns.Add("DiaChi", "DiaChi");
+            dgvKH.Columns.Add("LoaiKH", "LoaiKhachHang");
+            dgvKH.Columns.Add("CMND", "CMND");
+            var source = new BindingSource();
+            source.DataSource = DataUtil.DSKhachHang();
+            dgvKH.DataSource = source;
+        }
+        private void PopulateDGVPhong(List<KhachHang> s)
+        {
+            var source = new BindingSource();
+            source.DataSource = s;
+            dgvKH.DataSource = source;
         }
     }
 }

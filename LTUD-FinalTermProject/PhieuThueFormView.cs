@@ -14,38 +14,37 @@ namespace LTUD_FinalTermProject
     {
         public PhieuThueFormView()
         {
-            dgvCTPhieuThue.Columns[0].Name = "ID";
-            dgvCTPhieuThue.Columns[1].Name = "MaPhieuThue";
-            dgvCTPhieuThue.Columns[2].Name = "MaKhachHang";
 
-            dgvPhieuThue.Columns[0].Name = "ID";
-            dgvPhieuThue.Columns[0].Name = "MaPhong";
-            dgvPhieuThue.Columns[0].Name = "NgayBatDau";
-            xuatpt();
-            
+
+            IninitializeDGV();
             InitializeComponent();
         }
-        public void xuatpt()
+        public void IninitializeDGV()
         {
-            DataGridViewRow row = dgvCTPhieuThue.CurrentRow;
-            var kh = DataUtil.DSCT_PhieuThue();
-            foreach (var khh in kh)
-            {
-                row.Cells["ID"].Value = khh.ID;
-                row.Cells["MaPhieuThue"].Value = khh.MaPhieuThue;
-                row.Cells["MaKhachHang"].Value = khh.MaKhachHang;
-               
-            }
-            DataGridViewRow row1 = dgvCTPhieuThue.CurrentRow;
-            var khh1 = DataUtil.DSPhieuThue();
-            foreach (var khh in khh1)
-            {
-                row.Cells["ID"].Value = khh.ID;
-                row.Cells["MaPhong"].Value = khh.MaPhong;
-                row.Cells["NgayBatDau"].Value = khh.NgayBatDau;
 
-            }
+            dgvCTPhieuThue.Columns.Add("ID", "ID");
+            dgvCTPhieuThue.Columns.Add("MaPhieuThue", "MaPhieuThue");
+            dgvCTPhieuThue.Columns.Add("MaKhachHang", "MaKhachHang");
+            var source = new BindingSource();
+            source.DataSource = DataUtil.DSCT_PhieuThue();
+            dgvCTPhieuThue.DataSource = source;
+
+
+
+            dgvPhieuThue.Columns.Add("ID", "ID");
+            dgvPhieuThue.Columns.Add("MaPhong", "MaPhong");
+            dgvPhieuThue.Columns.Add("NgayBatDau", "NgayBatDau");
+            var source1 = new BindingSource();
+            source.DataSource = DataUtil.DSPhieuThue();
+            dgvPhieuThue.DataSource = source1;
         }
+        private void PopulateDGVPhong(List<Phong> s)
+        {
+            var source = new BindingSource();
+            source.DataSource = s;
+            dgvPhieuThue.DataSource = source;
+        }
+
         private void label5_Click(object sender, EventArgs e)
         {
 
