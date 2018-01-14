@@ -33,7 +33,7 @@
             this.textTimMaKH = new System.Windows.Forms.TextBox();
             this.comboTimLoaiKH = new System.Windows.Forms.ComboBox();
             this.buttonTimKiem = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvKhachHang = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -45,7 +45,7 @@
             this.buttonThemKH = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -93,13 +93,14 @@
             this.buttonTimKiem.Text = "TimKiem";
             this.buttonTimKiem.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvKhachHang
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 225);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(535, 105);
-            this.dataGridView1.TabIndex = 7;
+            this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKhachHang.Location = new System.Drawing.Point(0, 225);
+            this.dgvKhachHang.Name = "dgvKhachHang";
+            this.dgvKhachHang.Size = new System.Drawing.Size(535, 105);
+            this.dgvKhachHang.TabIndex = 7;
+            this.dgvKhachHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label5
             // 
@@ -202,7 +203,7 @@
             // 
             this.groupBox2.Controls.Add(this.groupBox1);
             this.groupBox2.Controls.Add(this.buttonThemKH);
-            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Controls.Add(this.dgvKhachHang);
             this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.textBox2);
@@ -228,7 +229,7 @@
             this.Name = "KhachHangFormView";
             this.Text = "Khách hàng";
             this.Load += new System.EventHandler(this.KhachHangFormView_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -243,7 +244,7 @@
         private System.Windows.Forms.TextBox textTimMaKH;
         private System.Windows.Forms.ComboBox comboTimLoaiKH;
         private System.Windows.Forms.Button buttonTimKiem;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvKhachHang;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
