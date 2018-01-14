@@ -16,7 +16,8 @@ namespace LTUD_FinalTermProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MenuFormView());
+            //Application.Run(new MenuFormView());
+            Application.Run(new DanhMucPhongFormView());
         }
     }
 }
