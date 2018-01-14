@@ -36,7 +36,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvKH = new System.Windows.Forms.DataGridView();
-            this.btnTaoKH = new System.Windows.Forms.Button();
             this.btnHuyTao = new System.Windows.Forms.Button();
             this.btnTao = new System.Windows.Forms.Button();
             this.ThemKH = new System.Windows.Forms.Button();
@@ -65,7 +64,6 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.groupBox2);
-            this.splitContainer1.Panel2.Controls.Add(this.btnTaoKH);
             this.splitContainer1.Panel2.Controls.Add(this.btnHuyTao);
             this.splitContainer1.Panel2.Controls.Add(this.btnTao);
             this.splitContainer1.Panel2.Controls.Add(this.ThemKH);
@@ -91,11 +89,11 @@
             // 
             // txtTinhTrang
             // 
-            this.txtTinhTrang.Enabled = false;
             this.txtTinhTrang.Location = new System.Drawing.Point(367, 42);
             this.txtTinhTrang.Name = "txtTinhTrang";
             this.txtTinhTrang.Size = new System.Drawing.Size(100, 20);
             this.txtTinhTrang.TabIndex = 3;
+            this.txtTinhTrang.MouseHover += new System.EventHandler(this.txtTinhTrang_MouseHover);
             // 
             // label2
             // 
@@ -143,15 +141,6 @@
             this.dgvKH.Size = new System.Drawing.Size(427, 81);
             this.dgvKH.TabIndex = 0;
             // 
-            // btnTaoKH
-            // 
-            this.btnTaoKH.Location = new System.Drawing.Point(330, 148);
-            this.btnTaoKH.Name = "btnTaoKH";
-            this.btnTaoKH.Size = new System.Drawing.Size(95, 23);
-            this.btnTaoKH.TabIndex = 10;
-            this.btnTaoKH.Text = "Tạo khách hàng";
-            this.btnTaoKH.UseVisualStyleBackColor = true;
-            // 
             // btnHuyTao
             // 
             this.btnHuyTao.Location = new System.Drawing.Point(390, 187);
@@ -160,6 +149,7 @@
             this.btnHuyTao.TabIndex = 9;
             this.btnHuyTao.Text = "Huỷ";
             this.btnHuyTao.UseVisualStyleBackColor = true;
+            this.btnHuyTao.Click += new System.EventHandler(this.btnHuyTao_Click);
             // 
             // btnTao
             // 
@@ -169,24 +159,27 @@
             this.btnTao.TabIndex = 8;
             this.btnTao.Text = "Tạo phiếu thuê";
             this.btnTao.UseVisualStyleBackColor = true;
+            this.btnTao.Click += new System.EventHandler(this.btnTao_Click);
             // 
             // ThemKH
             // 
-            this.ThemKH.Location = new System.Drawing.Point(211, 148);
+            this.ThemKH.Location = new System.Drawing.Point(274, 148);
             this.ThemKH.Name = "ThemKH";
             this.ThemKH.Size = new System.Drawing.Size(107, 23);
             this.ThemKH.TabIndex = 7;
             this.ThemKH.Text = "Thêm khách hàng";
             this.ThemKH.UseVisualStyleBackColor = true;
+            this.ThemKH.Click += new System.EventHandler(this.ThemKH_Click);
             // 
             // btnXoaKH
             // 
-            this.btnXoaKH.Location = new System.Drawing.Point(91, 148);
+            this.btnXoaKH.Location = new System.Drawing.Point(114, 148);
             this.btnXoaKH.Name = "btnXoaKH";
             this.btnXoaKH.Size = new System.Drawing.Size(107, 23);
             this.btnXoaKH.TabIndex = 6;
             this.btnXoaKH.Text = "Xoá khách hàng";
             this.btnXoaKH.UseVisualStyleBackColor = true;
+            this.btnXoaKH.Click += new System.EventHandler(this.btnXoaKH_Click);
             // 
             // label3
             // 
@@ -231,7 +224,6 @@
         private System.Windows.Forms.Button ThemKH;
         private System.Windows.Forms.Button btnXoaKH;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnTaoKH;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dgvKH;
     }

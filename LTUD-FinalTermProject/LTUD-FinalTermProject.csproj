@@ -51,6 +51,12 @@
     <Compile Include="BaoCaoFormView.Designer.cs">
       <DependentUpon>BaoCaoFormView.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChonKhachHangFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChonKhachHangFormView.Designer.cs">
+      <DependentUpon>ChonKhachHangFormView.cs</DependentUpon>
+    </Compile>
     <Compile Include="CT_PhieuThue.cs" />
     <Compile Include="DanhMucPhongFormView.cs">
       <SubType>Form</SubType>
@@ -107,6 +113,9 @@
     </Compile>
     <EmbeddedResource Include="BaoCaoFormView.resx">
       <DependentUpon>BaoCaoFormView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChonKhachHangFormView.resx">
+      <DependentUpon>ChonKhachHangFormView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMucPhongFormView.resx">
       <DependentUpon>DanhMucPhongFormView.cs</DependentUpon>
