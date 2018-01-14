@@ -17,9 +17,6 @@ namespace LTUD_FinalTermProject
             InitializeComponent();
         }
 
-        private void buttonBaoCao_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

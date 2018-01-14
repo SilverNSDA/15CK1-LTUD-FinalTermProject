@@ -58,7 +58,6 @@
             this.label3.Size = new System.Drawing.Size(116, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Theo Mã Khách Hàng:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -100,7 +99,6 @@
             this.dgvKhachHang.Name = "dgvKhachHang";
             this.dgvKhachHang.Size = new System.Drawing.Size(535, 105);
             this.dgvKhachHang.TabIndex = 7;
-            this.dgvKhachHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label5
             // 
@@ -110,7 +108,6 @@
             this.label5.Size = new System.Drawing.Size(46, 13);
             this.label5.TabIndex = 8;
             this.label5.Text = "Họ Tên:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -120,7 +117,6 @@
             this.label6.Size = new System.Drawing.Size(93, 13);
             this.label6.TabIndex = 9;
             this.label6.Text = "Loại Khách Hàng:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -130,7 +126,6 @@
             this.label7.Size = new System.Drawing.Size(42, 13);
             this.label7.TabIndex = 10;
             this.label7.Text = "CMND:";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -140,7 +135,6 @@
             this.label8.Size = new System.Drawing.Size(44, 13);
             this.label8.TabIndex = 11;
             this.label8.Text = "Địa Chỉ:";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // textBox1
             // 
@@ -148,7 +142,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(193, 20);
             this.textBox1.TabIndex = 12;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -156,7 +149,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(194, 20);
             this.textBox2.TabIndex = 13;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
@@ -164,7 +156,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(193, 20);
             this.textBox3.TabIndex = 14;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // comboBox1
             // 
@@ -173,7 +164,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(194, 21);
             this.comboBox1.TabIndex = 15;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // buttonThemKH
             // 
@@ -218,7 +208,6 @@
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "KHÁCH HÀNG";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // KhachHangFormView
             // 
@@ -228,7 +217,6 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "KhachHangFormView";
             this.Text = "Khách hàng";
-            this.Load += new System.EventHandler(this.KhachHangFormView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

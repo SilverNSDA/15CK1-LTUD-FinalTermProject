@@ -106,7 +106,7 @@
             this.buttonBaoCao.TabIndex = 7;
             this.buttonBaoCao.Text = "Báo Cáo";
             this.buttonBaoCao.UseVisualStyleBackColor = true;
-            this.buttonBaoCao.Click += new System.EventHandler(this.buttonBaoCao_Click);
+         
             // 
             // dataGridViewBaoCao
             // 
