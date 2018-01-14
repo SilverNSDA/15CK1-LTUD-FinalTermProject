@@ -29,7 +29,12 @@ namespace LTUD_FinalTermProject
         private void btnThemKH_Click(object sender, EventArgs e)
         {
             var rnd = new Random();
-
+            bool flag = txtHoTen.Text == "" || cbLoaiKH.SelectedValue == null || txtCMND.Text == "" || txtDiaChi.Text == "";
+            if (flag)
+            {
+                MessageBox.Show("Dữ liệu không dầy đủ, xin nhập lại dữ liệu");
+                return;
+            }
             KhachHang kh = new KhachHang();
             kh.HoTen = txtHoTen.Text;
             kh.LoaiKhachHang = cbLoaiKH.SelectedValue.ToString();

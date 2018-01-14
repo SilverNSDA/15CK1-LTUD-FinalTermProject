@@ -16,17 +16,27 @@ namespace LTUD_FinalTermProject
         {
             InitializeComponent();
             IninitializeDGV();
+            InitializeComboBox();
             
         }
         public void IninitializeDGV()
         {
 
-            dgvDanhMucPhong.Columns.Add("ID", "MaPhong");
-            dgvDanhMucPhong.Columns.Add("LoaiPhong", "LoaiPhong");
-            dgvDanhMucPhong.Columns.Add("GhiChu", "GhiChu");
+            //dgvDanhMucPhong.Columns.Add("ID", "MaPhong");
+            //dgvDanhMucPhong.Columns.Add("LoaiPhong", "LoaiPhong");
+            //dgvDanhMucPhong.Columns.Add("GhiChu", "GhiChu");
             var source = new BindingSource();
             source.DataSource = DataUtil.DSPhong();
             dgvDanhMucPhong.DataSource = source;
+            dgvDanhMucPhong.MultiSelect = false;
+            dgvDanhMucPhong.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+        }
+        public void InitializeComboBox()
+        {
+            var lp = DataUtil.DSLoaiPhong();
+            cbTimLoaiPhong.ValueMember = "ID";
+            cbTimLoaiPhong.DisplayMember = "ID";
+            cbTimLoaiPhong.DataSource = lp;
         }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keydata)
@@ -38,62 +48,45 @@ namespace LTUD_FinalTermProject
             }
             return false;
         }
-        private List<Phong> SearchPhong(string tb1 , string cb1)
+        private List<Phong> SearchPhong(string loaiPhong=null , string maPhong=null)
         {
-           
-            if (tb1 != null && cb1 == null)
+            if (maPhong.Trim() == "")
+                maPhong = null;
+            if (loaiPhong.Trim() == "")
+                loaiPhong = null;
+            List<Phong> result = new List<Phong>();
+            var dt = DataUtil.DSPhong();
+            if (loaiPhong == null && maPhong==null)
             {
-                List<Phong> maPhong = new List<Phong>();
-                var dp = DataUtil.DSPhong();
-                foreach (var i in dp)
-                {
-                    if (tb1 == i.ID)
-                    {
-                        maPhong.Add(i);
-                    }
-                }
-                return maPhong;
-
-            }
-            if (tb1 == null && cb1 != null)
+                result = dt;
+            }else if (loaiPhong == null && maPhong != null)
             {
-                List<Phong> maLoaiPhong = new List<Phong>();
-                var lp = DataUtil.DSPhong();
-                foreach (var i in lp)
+                foreach(var p in dt)
                 {
-                    if (cb1 == i.LoaiPhong)
-                    {
-                        maLoaiPhong.Add(i);
-                    }
+                    if (p.ID.Trim() == maPhong.Trim())
+                        result.Add(p);
                 }
-                return maLoaiPhong;
-            }
-            else
+            }else if (loaiPhong != null && maPhong == null)
             {
-                List<Phong> maPhong = new List<Phong>();
-                var dp = DataUtil.DSPhong();
-
-                List<LoaiPhong> maLoaiPhong = new List<LoaiPhong>();
-                var lp = DataUtil.DSLoaiPhong();
-
-
-                foreach (var i in dp)
+                foreach(var p in dt)
                 {
-                    if (tb1 == i.ID)
-                    {
-                        maPhong.Add(i);
-                    }
+                    if (p.LoaiPhong.Trim() == loaiPhong.Trim())
+                        result.Add(p);
                 }
-
-                foreach (var i in lp)
+            }else if(loaiPhong!=null && maPhong != null)
+            {
+                foreach(var p in dt)
                 {
-                    if (cb1 == i.ID)
-                    {
-                        maLoaiPhong.Add(i);
-                    }
+                    if (p.LoaiPhong.Trim() == loaiPhong.Trim() && p.ID.Trim() == maPhong.Trim())
+                        result.Add(p);
                 }
-                return maPhong;
             }
+
+
+
+            return result;
+
+
         }
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
@@ -101,13 +94,19 @@ namespace LTUD_FinalTermProject
             string tb1 = txtTimMaPhong.Text;
             string cb1 = cbTimLoaiPhong.Text;
 
-            SearchPhong(tb1,cb1);
+            var result = SearchPhong(cb1,tb1);
+            PopulateDGVPhong(result);
         }
         private void PopulateDGVPhong(List<Phong> s)
         {
             var source = new BindingSource();
             source.DataSource = s;
             dgvDanhMucPhong.DataSource = source;
+        }
+
+        private void btnAll_Click(object sender, EventArgs e)
+        {
+            PopulateDGVPhong(DataUtil.DSPhong());
         }
     }
 }

@@ -14,19 +14,21 @@ namespace LTUD_FinalTermProject
     {
         public TaoPhieuThueFormView()
         {
-            IninitializeDGV();
+            
             InitializeComponent();
+            IninitializeDGV();
         }
         public void IninitializeDGV()
         {
 
-            dgvKH.Columns.Add("ID", "MaKhachHang");
-            dgvKH.Columns.Add("HoTen", "HoTenKhachHang");
-            dgvKH.Columns.Add("DiaChi", "DiaChi");
-            dgvKH.Columns.Add("LoaiKH", "LoaiKhachHang");
-            dgvKH.Columns.Add("CMND", "CMND");
+            //dgvKH.Columns.Add("ID", "MaKhachHang");
+            //dgvKH.Columns.Add("HoTen", "HoTenKhachHang");
+            //dgvKH.Columns.Add("DiaChi", "DiaChi");
+            //dgvKH.Columns.Add("LoaiKH", "LoaiKhachHang");
+            //dgvKH.Columns.Add("CMND", "CMND");
             var source = new BindingSource();
-            source.DataSource = DataUtil.DSKhachHang();
+            //source.DataSource = DataUtil.DSKhachHang();
+            source.DataSource = new List<KhachHang>();
             dgvKH.DataSource = source;
         }
         private void PopulateDGVPhong(List<KhachHang> s)

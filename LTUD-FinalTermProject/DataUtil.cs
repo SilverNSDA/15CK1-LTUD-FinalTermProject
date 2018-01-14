@@ -16,7 +16,7 @@ namespace LTUD_FinalTermProject
         static SqlConnection cn;
         static DataUtil()
         {
-            cnString = "";
+            cnString = "Data Source=DESKTOP-FHDO5A5\\SQLEXPRESS;database=QLKhachSan;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             cn = new SqlConnection(cnString);
 
         }

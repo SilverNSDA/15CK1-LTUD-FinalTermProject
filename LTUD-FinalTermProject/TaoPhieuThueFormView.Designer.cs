@@ -139,6 +139,7 @@
             this.dgvKH.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvKH.Location = new System.Drawing.Point(3, 16);
             this.dgvKH.Name = "dgvKH";
+            this.dgvKH.ReadOnly = true;
             this.dgvKH.Size = new System.Drawing.Size(427, 81);
             this.dgvKH.TabIndex = 0;
             // 

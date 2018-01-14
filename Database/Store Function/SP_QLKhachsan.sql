@@ -1,4 +1,5 @@
 ﻿USE QLKhachSan
+GO
 
 ------------- TABLE LOẠI PHÒNG ------------------------
 -- INSERT

@@ -30,27 +30,14 @@ namespace LTUD_FinalTermProject
                 dgvBaoCaoMatDo();
             }
         }
-
-        private void radioMatDoPhong_CheckedChanged(object sender, EventArgs e)
-        {
-            radioDoanhThuLoai.Checked = !radioDoanhThuLoai.Checked;
-            radioMatDoPhong.Checked = !radioMatDoPhong.Checked;
-        }
-
-        private void radioDoanhThuLoai_CheckedChanged(object sender, EventArgs e)
-        {
-            radioDoanhThuLoai.Checked = !radioDoanhThuLoai.Checked;
-            radioMatDoPhong.Checked = !radioMatDoPhong.Checked;
-        }
-
         private void dgvBaoCaoMatDo ()
         {
             dataGridViewBaoCao.Columns.Clear();
-            dataGridViewBaoCao.Columns.Add("ID", "ID");
-            dataGridViewBaoCao.Columns.Add("MaPhong","Mã phòng");
-            dataGridViewBaoCao.Columns.Add("NgayBatDau", "Ngày bắt đầu");
-            dataGridViewBaoCao.Columns.Add("NgayKetThuc", "Ngày kết thúc");
-            dataGridViewBaoCao.Columns.Add("MatDo", "Mật độ");
+            //dataGridViewBaoCao.Columns.Add("ID", "ID");
+            //dataGridViewBaoCao.Columns.Add("MaPhong","Mã phòng");
+            //dataGridViewBaoCao.Columns.Add("NgayBatDau", "Ngày bắt đầu");
+            //dataGridViewBaoCao.Columns.Add("NgayKetThuc", "Ngày kết thúc");
+            //dataGridViewBaoCao.Columns.Add("MatDo", "Mật độ");
             var source = new BindingSource();
             source.DataSource = DataUtil.DSMD_SuDungPhong();
             dataGridViewBaoCao.DataSource = source;
@@ -59,14 +46,26 @@ namespace LTUD_FinalTermProject
         private void dgvBaoCaoDoanhThu()
         {
             dataGridViewBaoCao.Columns.Clear();
-            dataGridViewBaoCao.Columns.Add("ID", "ID");
-            dataGridViewBaoCao.Columns.Add("MaLoaiPhong", "Mã loại phòng");
-            dataGridViewBaoCao.Columns.Add("NgayBatDau", "Ngày bắt đầu");
-            dataGridViewBaoCao.Columns.Add("NgayKetThuc", "Ngày kết thúc");
-            dataGridViewBaoCao.Columns.Add("DoanhThu", "Doanh thu");
+            //dataGridViewBaoCao.Columns.Add("ID", "ID");
+            //dataGridViewBaoCao.Columns.Add("MaLoaiPhong", "Mã loại phòng");
+            //dataGridViewBaoCao.Columns.Add("NgayBatDau", "Ngày bắt đầu");
+            //dataGridViewBaoCao.Columns.Add("NgayKetThuc", "Ngày kết thúc");
+            //dataGridViewBaoCao.Columns.Add("DoanhThu", "Doanh thu");
             var source = new BindingSource();
             source.DataSource = DataUtil.DSDT_TheoLoaiPhong();
             dataGridViewBaoCao.DataSource = source;
+        }
+
+        private void radioDoanhThuLoai_Click(object sender, EventArgs e)
+        {
+            radioDoanhThuLoai.Checked = true;
+            radioMatDoPhong.Checked = false;
+        }
+
+        private void radioMatDoPhong_Click(object sender, EventArgs e)
+        {
+            radioDoanhThuLoai.Checked = false;
+            radioMatDoPhong.Checked = true;
         }
     }
 }

@@ -31,6 +31,7 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnAll = new System.Windows.Forms.Button();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.cbTimLoaiPhong = new System.Windows.Forms.ComboBox();
             this.txtTimMaPhong = new System.Windows.Forms.TextBox();
@@ -77,6 +78,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnAll);
             this.groupBox2.Controls.Add(this.btnTimKiem);
             this.groupBox2.Controls.Add(this.cbTimLoaiPhong);
             this.groupBox2.Controls.Add(this.txtTimMaPhong);
@@ -89,9 +91,19 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tìm kiếm";
             // 
+            // btnAll
+            // 
+            this.btnAll.Location = new System.Drawing.Point(296, 46);
+            this.btnAll.Name = "btnAll";
+            this.btnAll.Size = new System.Drawing.Size(75, 23);
+            this.btnAll.TabIndex = 11;
+            this.btnAll.Text = "Toàn bô";
+            this.btnAll.UseVisualStyleBackColor = true;
+            this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
+            // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Location = new System.Drawing.Point(297, 47);
+            this.btnTimKiem.Location = new System.Drawing.Point(296, 19);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(75, 23);
             this.btnTimKiem.TabIndex = 10;
@@ -138,6 +150,7 @@
             this.dgvDanhMucPhong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDanhMucPhong.Location = new System.Drawing.Point(0, 0);
             this.dgvDanhMucPhong.Name = "dgvDanhMucPhong";
+            this.dgvDanhMucPhong.ReadOnly = true;
             this.dgvDanhMucPhong.Size = new System.Drawing.Size(424, 203);
             this.dgvDanhMucPhong.TabIndex = 0;
             // 
@@ -172,5 +185,6 @@
         private System.Windows.Forms.TextBox txtTimMaPhong;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnAll;
     }
 }

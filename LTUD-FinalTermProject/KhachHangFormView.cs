@@ -15,49 +15,37 @@ namespace LTUD_FinalTermProject
         public KhachHangFormView()
         {
             InitializeComponent();
-<<<<<<< HEAD
             IninitializeDGV();
+            InitializeCombobox();
 
 
         }
         public void IninitializeDGV()
         {
 
-            dgvKhachHang.Columns.Add("ID", "MaKhachHang");
-            dgvKhachHang.Columns.Add("HoTen", "HoTenKhachHang");
-            dgvKhachHang.Columns.Add("DiaChi", "DiaChi");
-            dgvKhachHang.Columns.Add("LoaiKH", "LoaiKhachHang");
-            dgvKhachHang.Columns.Add("CMND", "CMND");
+            //dgvKhachHang.Columns.Add("ID", "MaKhachHang");
+            //dgvKhachHang.Columns.Add("HoTen", "HoTenKhachHang");
+            //dgvKhachHang.Columns.Add("DiaChi", "DiaChi");
+            //dgvKhachHang.Columns.Add("LoaiKH", "LoaiKhachHang");
+            //dgvKhachHang.Columns.Add("CMND", "CMND");
             var source = new BindingSource();
             source.DataSource = DataUtil.DSKhachHang();
             dgvKhachHang.DataSource = source;
+            dgvKhachHang.MultiSelect = false;
+            dgvKhachHang.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+        }
+        public void InitializeCombobox()
+        {
+            var lkh = DataUtil.DSLoaiKhachHang();
+            comboTimLoaiKH.ValueMember = "ID";
+            comboTimLoaiKH.DisplayMember = "TenLoai";
+            comboTimLoaiKH.DataSource = lkh;
         }
         private void PopulateDGVPhong(List<KhachHang> s)
         {
             var source = new BindingSource();
             source.DataSource = s;
             dgvKhachHang.DataSource = source;
-=======
-            xuat();
-        }
-        public void xuat()
-        {
-            dgvKhachHang.Columns[0].Name = "ID";
-            dgvKhachHang.Columns[1].Name = "HoTen";
-            dgvKhachHang.Columns[2].Name = "DiaChi";
-            dgvKhachHang.Columns[3].Name = "LoaiKH";
-            dgvKhachHang.Columns[4].Name = "CMND";
-            DataGridViewRow row = dgvKhachHang.CurrentRow;
-            var kh = DataUtil.DSKhachHang();
-            foreach (var khh in kh)
-            {
-                row.Cells["ID"].Value = khh.ID;
-                row.Cells["HoTen"].Value = khh.HoTen;
-                row.Cells["DiaChi"].Value = khh.DiaChi;
-                row.Cells["LoaiKH"].Value = khh.LoaiKhachHang;
-                row.Cells["CMND"].Value = khh.CMND;
-            }
->>>>>>> 1560121
         }
         private void KhachHangFormView_Load(object sender, EventArgs e)
         {
@@ -127,15 +115,18 @@ namespace LTUD_FinalTermProject
 
         private void buttonTimKiem_Click(object sender, EventArgs e)
         {
-            List<KhachHang> searchResult;
-            //
-            //
-           
-            searchResult = searchKhachHang(textTimMaKH.Text,comboTimLoaiKH.SelectedValue.ToString());
+            var makh = textTimMaKH.Text.Trim();
+            var loaikh = comboTimLoaiKH.SelectedValue.ToString().Trim();
+
+            var searchResult = searchKhachHang(makh,loaikh);
             populateDGVKhachHang(searchResult);
         }
         private List<KhachHang> searchKhachHang(string makh=null, string loaikh=null)
         {
+            if(makh == "")
+            {
+                makh = null;
+            }
             var dt = DataUtil.DSKhachHang();
             List<KhachHang> result= new List<KhachHang>();
 
@@ -143,7 +134,7 @@ namespace LTUD_FinalTermProject
             {
                 foreach(var kh in dt)
                 {
-                    if(loaikh == kh.LoaiKhachHang)
+                    if(loaikh == kh.LoaiKhachHang.Trim())
                     {
                         result.Add(kh);
                     }
@@ -153,7 +144,7 @@ namespace LTUD_FinalTermProject
                 {
                     foreach (var kh in dt)
                     {
-                        if (makh == kh.ID)
+                        if (makh == kh.ID.Trim())
                         {
                             result.Add(kh);
                         }
@@ -166,7 +157,7 @@ namespace LTUD_FinalTermProject
             {
                 foreach (var kh in dt)
                 {
-                    if (makh == kh.ID && loaikh == kh.LoaiKhachHang)
+                    if (makh == kh.ID.Trim() && loaikh == kh.LoaiKhachHang.Trim())
                     {
                         result.Add(kh);
                     }
@@ -179,7 +170,37 @@ namespace LTUD_FinalTermProject
         }
         private void populateDGVKhachHang(List<KhachHang> searchResult)
         {
-            
+            var source = new BindingSource();
+            source.DataSource = searchResult;
+            dgvKhachHang.DataSource = source;
+        }
+
+        private void btnAll_Click(object sender, EventArgs e)
+        {
+            populateDGVKhachHang(DataUtil.DSKhachHang());
+        }
+
+        private void dgvKhachHang_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvKhachHang.SelectedRows.Count>0)
+            {
+                var row = dgvKhachHang.SelectedRows[0];
+                var dt = row.DataBoundItem as KhachHang;
+                if (dt == null)
+                {
+                    txtHoTen.Text = "";
+                    txtDiaChi.Text = "";
+                    txtCMND.Text = "";
+                    cbLoaiKH.Text = "";
+                }
+                else
+                {
+                    txtHoTen.Text = dt.HoTen;
+                    txtDiaChi.Text = dt.DiaChi;
+                    txtCMND.Text = dt.CMND;
+                    cbLoaiKH.Text = dt.LoaiKhachHang;
+                }
+            }
         }
     }
 }

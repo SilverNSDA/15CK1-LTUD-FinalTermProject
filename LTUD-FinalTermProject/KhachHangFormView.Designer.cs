@@ -38,13 +38,14 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtHoTen = new System.Windows.Forms.TextBox();
+            this.txtCMND = new System.Windows.Forms.TextBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.cbLoaiKH = new System.Windows.Forms.ComboBox();
             this.buttonThemKH = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnAll = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -86,7 +87,7 @@
             // 
             // buttonTimKiem
             // 
-            this.buttonTimKiem.Location = new System.Drawing.Point(402, 56);
+            this.buttonTimKiem.Location = new System.Drawing.Point(407, 20);
             this.buttonTimKiem.Name = "buttonTimKiem";
             this.buttonTimKiem.Size = new System.Drawing.Size(75, 23);
             this.buttonTimKiem.TabIndex = 6;
@@ -99,9 +100,11 @@
             this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKhachHang.Location = new System.Drawing.Point(0, 225);
             this.dgvKhachHang.Name = "dgvKhachHang";
+            this.dgvKhachHang.ReadOnly = true;
             this.dgvKhachHang.Size = new System.Drawing.Size(535, 105);
             this.dgvKhachHang.TabIndex = 7;
             this.dgvKhachHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvKhachHang.SelectionChanged += new System.EventHandler(this.dgvKhachHang_SelectionChanged);
             // 
             // label5
             // 
@@ -143,38 +146,42 @@
             this.label8.Text = "Địa Chỉ:";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // textBox1
+            // txtHoTen
             // 
-            this.textBox1.Location = new System.Drawing.Point(199, 117);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(193, 20);
-            this.textBox1.TabIndex = 12;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtHoTen.Enabled = false;
+            this.txtHoTen.Location = new System.Drawing.Point(199, 117);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Size = new System.Drawing.Size(193, 20);
+            this.txtHoTen.TabIndex = 12;
+            this.txtHoTen.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtCMND
             // 
-            this.textBox2.Location = new System.Drawing.Point(199, 173);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 20);
-            this.textBox2.TabIndex = 13;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtCMND.Enabled = false;
+            this.txtCMND.Location = new System.Drawing.Point(199, 173);
+            this.txtCMND.Name = "txtCMND";
+            this.txtCMND.Size = new System.Drawing.Size(194, 20);
+            this.txtCMND.TabIndex = 13;
+            this.txtCMND.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // txtDiaChi
             // 
-            this.textBox3.Location = new System.Drawing.Point(199, 199);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(193, 20);
-            this.textBox3.TabIndex = 14;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtDiaChi.Enabled = false;
+            this.txtDiaChi.Location = new System.Drawing.Point(199, 199);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(193, 20);
+            this.txtDiaChi.TabIndex = 14;
+            this.txtDiaChi.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // comboBox1
+            // cbLoaiKH
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(199, 143);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(194, 21);
-            this.comboBox1.TabIndex = 15;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cbLoaiKH.Enabled = false;
+            this.cbLoaiKH.FormattingEnabled = true;
+            this.cbLoaiKH.Location = new System.Drawing.Point(199, 143);
+            this.cbLoaiKH.Name = "cbLoaiKH";
+            this.cbLoaiKH.Size = new System.Drawing.Size(194, 21);
+            this.cbLoaiKH.TabIndex = 15;
+            this.cbLoaiKH.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // buttonThemKH
             // 
@@ -188,6 +195,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnAll);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textTimMaKH);
@@ -205,10 +213,10 @@
             this.groupBox2.Controls.Add(this.groupBox1);
             this.groupBox2.Controls.Add(this.buttonThemKH);
             this.groupBox2.Controls.Add(this.dgvKhachHang);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txtDiaChi);
+            this.groupBox2.Controls.Add(this.cbLoaiKH);
+            this.groupBox2.Controls.Add(this.txtCMND);
+            this.groupBox2.Controls.Add(this.txtHoTen);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label8);
@@ -220,6 +228,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "KHÁCH HÀNG";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // btnAll
+            // 
+            this.btnAll.Location = new System.Drawing.Point(407, 47);
+            this.btnAll.Name = "btnAll";
+            this.btnAll.Size = new System.Drawing.Size(75, 23);
+            this.btnAll.TabIndex = 7;
+            this.btnAll.Text = "Toàn bộ";
+            this.btnAll.UseVisualStyleBackColor = true;
+            this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // KhachHangFormView
             // 
@@ -250,12 +268,13 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtHoTen;
+        private System.Windows.Forms.TextBox txtCMND;
+        private System.Windows.Forms.TextBox txtDiaChi;
+        private System.Windows.Forms.ComboBox cbLoaiKH;
         private System.Windows.Forms.Button buttonThemKH;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnAll;
     }
 }

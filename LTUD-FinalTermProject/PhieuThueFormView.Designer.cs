@@ -238,6 +238,7 @@
             // 
             // txtDonGia
             // 
+            this.txtDonGia.Enabled = false;
             this.txtDonGia.Location = new System.Drawing.Point(361, 38);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(144, 20);
@@ -254,6 +255,7 @@
             // 
             // txtLoaiPhong
             // 
+            this.txtLoaiPhong.Enabled = false;
             this.txtLoaiPhong.Location = new System.Drawing.Point(361, 11);
             this.txtLoaiPhong.Name = "txtLoaiPhong";
             this.txtLoaiPhong.Size = new System.Drawing.Size(144, 20);
@@ -271,6 +273,7 @@
             // dtNgayBD
             // 
             this.dtNgayBD.CustomFormat = " dd MMM,yyyy HH:mm:ss";
+            this.dtNgayBD.Enabled = false;
             this.dtNgayBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtNgayBD.Location = new System.Drawing.Point(100, 60);
             this.dtNgayBD.Name = "dtNgayBD";
@@ -288,6 +291,7 @@
             // 
             // cbMaPhong
             // 
+            this.cbMaPhong.Enabled = false;
             this.cbMaPhong.FormattingEnabled = true;
             this.cbMaPhong.Location = new System.Drawing.Point(100, 37);
             this.cbMaPhong.Name = "cbMaPhong";
@@ -305,6 +309,7 @@
             // 
             // txtMaPhieuThue
             // 
+            this.txtMaPhieuThue.Enabled = false;
             this.txtMaPhieuThue.Location = new System.Drawing.Point(100, 11);
             this.txtMaPhieuThue.Name = "txtMaPhieuThue";
             this.txtMaPhieuThue.Size = new System.Drawing.Size(158, 20);
@@ -325,6 +330,7 @@
             this.dgvCTPhieuThue.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCTPhieuThue.Location = new System.Drawing.Point(0, 0);
             this.dgvCTPhieuThue.Name = "dgvCTPhieuThue";
+            this.dgvCTPhieuThue.ReadOnly = true;
             this.dgvCTPhieuThue.Size = new System.Drawing.Size(521, 75);
             this.dgvCTPhieuThue.TabIndex = 0;
             // 
@@ -334,8 +340,10 @@
             this.dgvPhieuThue.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPhieuThue.Location = new System.Drawing.Point(0, 0);
             this.dgvPhieuThue.Name = "dgvPhieuThue";
+            this.dgvPhieuThue.ReadOnly = true;
             this.dgvPhieuThue.Size = new System.Drawing.Size(527, 133);
             this.dgvPhieuThue.TabIndex = 0;
+            this.dgvPhieuThue.SelectionChanged += new System.EventHandler(this.dgvPhieuThue_SelectionChanged);
             // 
             // PhieuThueFormView
             // 

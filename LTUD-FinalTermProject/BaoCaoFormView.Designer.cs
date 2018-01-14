@@ -50,7 +50,7 @@
             this.radioMatDoPhong.TabStop = true;
             this.radioMatDoPhong.Text = "Mật Độ Phòng";
             this.radioMatDoPhong.UseVisualStyleBackColor = true;
-            this.radioMatDoPhong.CheckedChanged += new System.EventHandler(this.radioMatDoPhong_CheckedChanged);
+            this.radioMatDoPhong.Click += new System.EventHandler(this.radioMatDoPhong_Click);
             // 
             // radioDoanhThuLoai
             // 
@@ -62,7 +62,7 @@
             this.radioDoanhThuLoai.TabStop = true;
             this.radioDoanhThuLoai.Text = "Doanh Thu Loại";
             this.radioDoanhThuLoai.UseVisualStyleBackColor = true;
-            this.radioDoanhThuLoai.CheckedChanged += new System.EventHandler(this.radioDoanhThuLoai_CheckedChanged);
+            this.radioDoanhThuLoai.Click += new System.EventHandler(this.radioDoanhThuLoai_Click);
             // 
             // label2
             // 
@@ -115,6 +115,7 @@
             this.dataGridViewBaoCao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewBaoCao.Location = new System.Drawing.Point(2, 179);
             this.dataGridViewBaoCao.Name = "dataGridViewBaoCao";
+            this.dataGridViewBaoCao.ReadOnly = true;
             this.dataGridViewBaoCao.Size = new System.Drawing.Size(521, 207);
             this.dataGridViewBaoCao.TabIndex = 8;
             // 
