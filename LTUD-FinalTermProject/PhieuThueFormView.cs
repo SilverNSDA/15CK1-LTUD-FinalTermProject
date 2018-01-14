@@ -46,17 +46,6 @@ namespace LTUD_FinalTermProject
             source.DataSource = s;
             dgvPhieuThue.DataSource = source;
         }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void bntTaoPhieuThue_Click(object sender, EventArgs e)
         {
             TaoPhieuThueFormView phieuthue = new TaoPhieuThueFormView();
@@ -147,5 +136,6 @@ namespace LTUD_FinalTermProject
             }
 
         }
+
     }
 }

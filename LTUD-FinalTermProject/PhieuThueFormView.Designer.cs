@@ -133,7 +133,7 @@
             this.label3.Size = new System.Drawing.Size(10, 13);
             this.label3.TabIndex = 23;
             this.label3.Text = "-\r\n";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+           
             // 
             // dtNgayKT
             // 

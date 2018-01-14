@@ -16,7 +16,6 @@ namespace LTUD_FinalTermProject
         {
             InitializeComponent();
         }
-
         private void buttonBaoCao_Click(object sender, EventArgs e)
         {
             if(radioDoanhThuLoai.Checked)
@@ -67,5 +66,6 @@ namespace LTUD_FinalTermProject
             radioDoanhThuLoai.Checked = false;
             radioMatDoPhong.Checked = true;
         }
+
     }
 }
