@@ -270,7 +270,7 @@
             // 
             this.dtNgayBD.CustomFormat = " dd MMM,yyyy HH:mm:ss";
             this.dtNgayBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtNgayBD.Location = new System.Drawing.Point(100, 63);
+            this.dtNgayBD.Location = new System.Drawing.Point(100, 60);
             this.dtNgayBD.Name = "dtNgayBD";
             this.dtNgayBD.Size = new System.Drawing.Size(158, 20);
             this.dtNgayBD.TabIndex = 25;

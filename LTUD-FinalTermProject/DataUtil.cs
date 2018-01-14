@@ -505,5 +505,28 @@ namespace LTUD_FinalTermProject
             cn.Close();
             return rs > 0;
         }
+
+        //FUNCTION
+        public static bool BaoCaoMatDo(DateTime nbd, DateTime nkt)
+        {
+            var cm = CreateCommand();
+            cm.CommandText = @"Exec BaoCaoMatDo @NBD, @NKT";
+            cm.Parameters.Add(new SqlParameter("@NBD", nbd));
+            cm.Parameters.Add(new SqlParameter("@NKT", nkt));
+            int rs = cm.ExecuteNonQuery();
+            cn.Close();
+            return rs > 0;
+        }
+
+        public static bool BaoCaoDoanhThu(DateTime nbd, DateTime nkt)
+        {
+            var cm = CreateCommand();
+            cm.CommandText = @"Exec BaoCaoDoanhThu @NBD, @NKT";
+            cm.Parameters.Add(new SqlParameter("@NBD", nbd));
+            cm.Parameters.Add(new SqlParameter("@NKT", nkt));
+            int rs = cm.ExecuteNonQuery();
+            cn.Close();
+            return rs > 0;
+        }
     }
 }

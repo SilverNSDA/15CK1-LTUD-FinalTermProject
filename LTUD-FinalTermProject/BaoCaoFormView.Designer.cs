@@ -50,6 +50,7 @@
             this.radioMatDoPhong.TabStop = true;
             this.radioMatDoPhong.Text = "Mật Độ Phòng";
             this.radioMatDoPhong.UseVisualStyleBackColor = true;
+            this.radioMatDoPhong.CheckedChanged += new System.EventHandler(this.radioMatDoPhong_CheckedChanged);
             // 
             // radioDoanhThuLoai
             // 
@@ -61,6 +62,7 @@
             this.radioDoanhThuLoai.TabStop = true;
             this.radioDoanhThuLoai.Text = "Doanh Thu Loại";
             this.radioDoanhThuLoai.UseVisualStyleBackColor = true;
+            this.radioDoanhThuLoai.CheckedChanged += new System.EventHandler(this.radioDoanhThuLoai_CheckedChanged);
             // 
             // label2
             // 
