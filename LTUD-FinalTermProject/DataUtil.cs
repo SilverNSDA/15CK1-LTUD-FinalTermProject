@@ -257,19 +257,6 @@ namespace LTUD_FinalTermProject
             return rs > 0;
         }
 
-        public static bool ThemQuyDinh(QuyDinh qd)
-        {
-            var cm = CreateCommand();
-            cm.CommandText = @"Exec add_row_QuyDinh @ID, @MoTa, @GiaTri, @DonVi";
-            cm.Parameters.Add(new SqlParameter("@ID", qd.ID));
-            cm.Parameters.Add(new SqlParameter("@MoTa", qd.MoTa));
-            cm.Parameters.Add(new SqlParameter("@GiaTri", qd.GiaTri));
-            cm.Parameters.Add(new SqlParameter("@DonVi", qd.DonVi));
-            int rs = cm.ExecuteNonQuery();
-            cn.Close();
-            return rs > 0;
-        }
-
         public static bool ThemMD_SuDungPhong(MD_SuDungPhong mdsdp)
         {
             var cm = CreateCommand();
@@ -421,6 +408,99 @@ namespace LTUD_FinalTermProject
             cm.Parameters.Add(new SqlParameter("@NBD", dttlp.NgayBatDau));
             cm.Parameters.Add(new SqlParameter("@NKT", dttlp.NgayKetThuc));
             cm.Parameters.Add(new SqlParameter("@DT", dttlp.DoanhThu));
+            int rs = cm.ExecuteNonQuery();
+            cn.Close();
+            return rs > 0;
+        }
+
+        // DELETE
+        public static bool DeletePhong(Phong p)
+        {
+            var cm = CreateCommand();
+            cm.CommandText = @"Exec delete_row_Phong @ID, @LP, @GC";
+            cm.Parameters.Add(new SqlParameter("@ID", p.ID));
+            cm.Parameters.Add(new SqlParameter("@LP", p.LoaiPhong));
+            cm.Parameters.Add(new SqlParameter("@GC", p.GhiChu));
+            int rs = cm.ExecuteNonQuery();
+            cn.Close();
+            return rs > 0;
+        }
+
+        public static bool DeleteLoaiPhong(LoaiPhong lp)
+        {
+            var cm = CreateCommand();
+            cm.CommandText = @"Exec delete_row_LoaiPhong @ID";
+            cm.Parameters.Add(new SqlParameter("@ID", lp.ID));
+            int rs = cm.ExecuteNonQuery();
+            cn.Close();
+            return rs > 0;
+        }
+
+        public static bool DeletePhieuThue(PhieuThue pt)
+        {
+            var cm = CreateCommand();
+            cm.CommandText = @"Exec delete_row_PhieuThue @ID";
+            cm.Parameters.Add(new SqlParameter("@ID", pt.ID));
+            int rs = cm.ExecuteNonQuery();
+            cn.Close();
+            return rs > 0;
+        }
+
+        public static bool DeleteKhachHang(KhachHang kh)
+        {
+            var cm = CreateCommand();
+            cm.CommandText = @"Exec delete_row_KhachHang @ID";
+            cm.Parameters.Add(new SqlParameter("@ID", kh.ID));
+            int rs = cm.ExecuteNonQuery();
+            cn.Close();
+            return rs > 0;
+        }
+
+        public static bool DeleteLoaiKhachHang(LoaiKhachHang lkh)
+        {
+            var cm = CreateCommand();
+            cm.CommandText = @"Exec delete_row_LoaiKhachHang @ID";
+            cm.Parameters.Add(new SqlParameter("@ID", lkh.ID));
+            int rs = cm.ExecuteNonQuery();
+            cn.Close();
+            return rs > 0;
+        }
+
+        public static bool DeleteCT_PhieuThue(CT_PhieuThue ctpt)
+        {
+            var cm = CreateCommand();
+            cm.CommandText = @"Exec delete_row_CT_PhieuThue @ID";
+            cm.Parameters.Add(new SqlParameter("@ID", ctpt.ID));
+            int rs = cm.ExecuteNonQuery();
+            cn.Close();
+            return rs > 0;
+        }
+
+        public static bool DeleteHoaDon(HoaDon hd)
+        {
+            var cm = CreateCommand();
+            cm.CommandText = @"Exec delete_row_HoaDon @MPT";
+            cm.Parameters.Add(new SqlParameter("@MPT", hd.MaPhieuThue));
+            int rs = cm.ExecuteNonQuery();
+            cn.Close();
+            return rs > 0;
+        }
+
+        public static bool DeleteMD_SuDungPhong(MD_SuDungPhong mdsdp)
+        {
+            var cm = CreateCommand();
+            cm.CommandText = @"Exec update_row_MD_SuDungPhong @ID";
+            cm.Parameters.Add(new SqlParameter("@ID", mdsdp.ID));
+            int rs = cm.ExecuteNonQuery();
+            cn.Close();
+            return rs > 0;
+        }
+
+        public static bool DeleteDT_TheoLoaiPhong(DT_TheoLoaiPhong dttlp)
+        {
+            var cm = CreateCommand();
+            cm.CommandText = @"Exec delete_row_DT_THEOLOAIPHONG @ID";
+            cm.Parameters.Add(new SqlParameter("@ID", dttlp.ID));
             int rs = cm.ExecuteNonQuery();
             cn.Close();
             return rs > 0;
