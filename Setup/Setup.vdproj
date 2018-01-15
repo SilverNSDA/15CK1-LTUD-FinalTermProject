@@ -52,13 +52,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_FBA9DB4182EE387B1FEC08E2064A5DFE"
+        "OwnerKey" = "8:_A3D3BCEEA3914DE99EAB8C90B5BBB728"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A3D3BCEEA3914DE99EAB8C90B5BBB728"
+        "OwnerKey" = "8:_FBA9DB4182EE387B1FEC08E2064A5DFE"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -79,6 +79,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -95,6 +111,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -303,7 +335,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Setup"
         "ProductCode" = "8:{12E3ABD3-B4EE-4688-91FA-3A36A2250C79}"
-        "PackageCode" = "8:{B34CD57A-4F6F-4522-9239-0F11568AC080}"
+        "PackageCode" = "8:{0435ED17-0537-4CB0-96D5-D23C73248664}"
         "UpgradeCode" = "8:{AD392556-4651-4529-B1D3-5F1324C1C759}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -423,6 +455,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_6FACC5320E84477AB8DB8AC75410A795"
+            {
+            "Name" = "8:QLKhachSan"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_A3D3BCEEA3914DE99EAB8C90B5BBB728"
+            "Folder" = "8:_1CF9911DE1E64D959BC4CC5C8EFCED27"
+            "WorkingFolder" = "8:_1CF9911DE1E64D959BC4CC5C8EFCED27"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
@@ -824,7 +870,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_A3D3BCEEA3914DE99EAB8C90B5BBB728"
             {
-            "SourcePath" = "8:..\\LTUD-FinalTermProject\\obj\\Debug\\LTUD-FinalTermProject.exe"
+            "SourcePath" = "8:..\\LTUD-FinalTermProject\\obj\\Release\\LTUD-FinalTermProject.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_1CF9911DE1E64D959BC4CC5C8EFCED27"

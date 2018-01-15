@@ -1,5 +1,5 @@
-﻿USE QLKhachSan
-GO
+﻿--USE QLKhachSan
+--GO
 
 ------------- TABLE LOẠI PHÒNG ------------------------
 -- INSERT
@@ -60,12 +60,12 @@ AS
 BEGIN
 	if exists(select * from PHONG p where p.ID = @ID)
 	begin
-		Raiserror(N'không thể insert phòng do phòng đã tồn tại',15,1,@dem)
+		Raiserror(N'không thể insert phòng do phòng đã tồn tại',15,1)
 		Rollback Transaction
 	end
 	if not exists(select * from LOAIPHONG lp where lp.ID = @LP)
 	begin
-		Raiserror(N'không thể insert phòng do loại phòng chưa tồn tại',15,1,@dem)
+		Raiserror(N'không thể insert phòng do loại phòng chưa tồn tại',15,1)
 		Rollback Transaction
 	end
 	INSERT INTO PHONG(ID,LoaiPhong,GhiChu) 
@@ -82,12 +82,12 @@ AS
 BEGIN
 	if exists(select * from PHONG p where p.ID = @ID)
 	begin
-		Raiserror(N'không thể insert phòng do phòng đã tồn tại',15,1,@dem)
+		Raiserror(N'không thể insert phòng do phòng đã tồn tại',15,1)
 		Rollback Transaction
 	end
 	if not exists(select * from LOAIPHONG lp where lp.ID = @LP)
 	begin
-		Raiserror(N'không thể insert phòng do loại phòng chưa tồn tại',15,1,@dem)
+		Raiserror(N'không thể insert phòng do loại phòng chưa tồn tại',15,1)
 		Rollback Transaction
 	end
 	UPDATE PHONG 
@@ -294,7 +294,7 @@ BEGIN
 		Raiserror(N'ID chi tiết không tồn tại, không thể update',15,1)
 		Rollback Transaction
 	end
-	if not exists(select * from PHIEUTHUE pt where pt.MaPhieuThue = @MPT)
+	if not exists(select * from PHIEUTHUE pt where pt.ID = @MPT)
 	begin
 		Raiserror(N'MPT không tồn tại, không thể update',15,1)
 		Rollback Transaction
